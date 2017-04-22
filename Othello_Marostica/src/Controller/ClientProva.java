@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package controller;
+
 import java.io.*;
 import java.net.*;
 
@@ -11,17 +12,27 @@ import java.net.*;
  *
  * @author marostica.lorenzo
  */
+public class ClientProva {
 
-public class Client_Prova {
-    
-    public Client_Prova() throws IOException {
-        try{    
+    BufferedReader sock_in;
+    PrintWriter sock_out;
+    BufferedReader std_in;
+
+    public ClientProva() {
+        try {
             Socket s = new Socket("192.168.56.1", 2250);
-            BufferedReader sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            PrintWriter sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
-            BufferedReader std_in = new BufferedReader(new InputStreamReader(System.in));
-            while (true) {
-            try{    
+            sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
+            std_in = new BufferedReader(new InputStreamReader(System.in));
+
+        } catch (IOException e) {
+            System.err.print(e);
+        }
+    }
+
+    public void ascolta() throws IOException {
+        while (true) {
+            try {
                 sock_out.println(std_in.readLine());
                 sock_out.println("echo");
                 sock_out.println("echo2");
@@ -29,12 +40,9 @@ public class Client_Prova {
                 System.out.println(sock_in.readLine());
                 System.out.println(sock_in.readLine());
                 System.out.println(sock_in.readLine());
-            }catch(SocketException e){
+            } catch (SocketException e) {
                 System.err.print("Connessione chiusa");
             }
-        }
-        }catch(IOException e){
-            System.err.print(e);
         }
     }
 }

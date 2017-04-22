@@ -12,9 +12,9 @@ package Controller;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class Server_Start {
+public class Server_Start extends Thread{
 
-    public Server_Start() {
+    public void run() {
 
         try{    
             ServerSocket ss = new ServerSocket(2250);

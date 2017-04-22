@@ -5,6 +5,9 @@
  */
 package Controller;
 
+//import controller.ClientProva;
+import java.io.IOException;
+
 /**
  *
  * @author marostica.lorenzo
@@ -14,7 +17,8 @@ public class Main_Prova {
     
     public static void main(String[] args) {
         Server_Start s = new Server_Start();
-        Client_Prova c = new Client_Prova();
+        ClientProva c = new ClientProva();
+        s.start();       
     }
     
 }
