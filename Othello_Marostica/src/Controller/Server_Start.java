@@ -14,16 +14,20 @@ import java.net.ServerSocket;
 
 public class Server_Start {
 
-    public void Connect() throws IOException {
+    public Server_Start() {
 
-        ServerSocket ss = new ServerSocket(2250);
-        while (true) {
-            new Server_Thread(ss.accept()).start(); 
-            
-          /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandleShake
-            il server rimanda indietro il pacchetto e basta.
-            Nel frattempo lui aspetta sempre, creando sempre un'altro thread per connessione
-          */
+        try{    
+            ServerSocket ss = new ServerSocket(2250);
+            while (true) {
+                new Server_Thread(ss.accept()).start(); 
+
+              /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandleShake
+                il server rimanda indietro il pacchetto e basta.
+                Nel frattempo lui aspetta sempre, creando sempre un'altro thread per connessione
+              */
+            }
+        }catch(IOException e){
+            System.err.print(e);
         }
     }
 }

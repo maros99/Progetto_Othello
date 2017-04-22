@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 public class Server_Thread extends Thread {
 
     private Socket s;
+    private String mes;
 
     public Server_Thread(Socket s) {
         this.s = s;
@@ -25,10 +26,12 @@ public class Server_Thread extends Thread {
         
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            PrintWriter out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
+            PrintWriter send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             
             while (true) {
-                out.println(in.readLine());
+                mes = in.readLine();
+                System.out.println(mes);
+                send.println(mes);
             }
         } catch (IOException ex) {
             Logger.getLogger(Server_Thread.class.getName()).log(Level.SEVERE, null, ex);
