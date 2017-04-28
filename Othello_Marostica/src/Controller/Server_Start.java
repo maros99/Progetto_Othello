@@ -13,13 +13,15 @@ import java.io.IOException;
 import java.net.ServerSocket;
 
 public class Server_Start {
-
+    private static int ID = 0;
+    private static int i = 0;
+    private static Server_Thread ar_client[];
     public Server_Start() {
-
+        ar_client = new Server_Thread[100];
         try{    
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
-                new Server_Thread(ss.accept()).start();
+                ar_client[i] = new Server_Thread(ss.accept()).start();
 
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandleShake
                 il server rimanda indietro il pacchetto e basta.
