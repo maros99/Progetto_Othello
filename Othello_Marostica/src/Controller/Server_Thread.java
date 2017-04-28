@@ -13,18 +13,17 @@ import java.io.*;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-public class Server_Thread{
+public class Server_Thread extends Thread{
 
     private Socket s;
     private String mes;
 
     public Server_Thread(Socket s) {
         this.s = s;
-        start();
+        System.out.println("Connessione stabilita\n\n");
     }
 
-    public void start() {
-        
+    public void run() {       
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             PrintWriter send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);

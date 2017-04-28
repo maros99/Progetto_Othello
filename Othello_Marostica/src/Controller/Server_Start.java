@@ -12,14 +12,14 @@ package Controller;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class Server_Start extends Thread{
+public class Server_Start {
 
-    public void run() {
+    public Server_Start() {
 
         try{    
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
-                new Server_Thread(ss.accept()).start(); 
+                new Server_Thread(ss.accept()).start();
 
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandleShake
                 il server rimanda indietro il pacchetto e basta.
