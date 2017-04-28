@@ -24,14 +24,7 @@ public class ClientProva {
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));
-
-        } catch (IOException e) {
-            System.err.print(e);
-        }
-    }
-
-    public void ascolta() throws IOException {
-        while (true) {
+            while (true) {
             try {
                 sock_out.println(std_in.readLine());
                 sock_out.println("echo");
@@ -43,6 +36,10 @@ public class ClientProva {
             } catch (SocketException e) {
                 System.err.print("Connessione chiusa");
             }
+        }
+
+        } catch (IOException e) {
+            System.err.print(e);
         }
     }
 }

@@ -5,7 +5,7 @@
  */
 package Controller;
 
-//import controller.ClientProva;
+import controller.ClientProva;
 import java.io.IOException;
 
 /**
@@ -17,8 +17,8 @@ public class Main_Prova {
     
     public static void main(String[] args) {
         Server_Start s = new Server_Start();
+        s.start();    
         ClientProva c = new ClientProva();
-        s.start();       
     }
     
 }
