@@ -17,19 +17,20 @@ public class Client_Socket {
 
     private Socket s;
     private String mes;
-    private int i;
+    private int ID;
     private PrintWriter send;
     private BufferedReader in;
 
-    public Client_Socket(Socket s) throws IOException {
+    public Client_Socket(Socket s, int ID) throws IOException {
         this.s = s;
-        this.i = i;
+        this.ID = ID;
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
+        Connect();
     }
 
-    public void run(){       
+    public void Connect(){
         try{
             in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
