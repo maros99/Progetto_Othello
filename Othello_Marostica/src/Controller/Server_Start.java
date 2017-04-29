@@ -38,8 +38,4 @@ public class Server_Start {
         }
     }
     
-    public static Server_Thread getThread(int c){
-        return ar_client[c];
-    }
-    
 }
