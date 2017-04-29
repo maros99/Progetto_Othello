@@ -20,10 +20,11 @@ public class Server_Start {
     private static ArrayList BW;
     public Server_Start() {
         BW = new ArrayList<BufferedWriter>();
-        BR = new ArrayList<BufferedReader>();
+        BR = new ArrayList<BufferedReader>(); 
         try{    
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
+                new Client_Socket(ss.accept());
                 if((i%2) == 1){
                     ID++;
                 }

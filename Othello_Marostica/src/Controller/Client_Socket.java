@@ -13,26 +13,26 @@ import java.io.*;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-public class Server_Thread extends Thread{
+public class Client_Socket {
 
     private Socket s;
     private String mes;
     private int i;
+    private PrintWriter send;
+    private BufferedReader in;
 
-    public Server_Thread(Socket s, int i) {
+    public Client_Socket(Socket s) throws IOException {
         this.s = s;
         this.i = i;
+        in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+        send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
     }
 
     public void run(){       
         try{
-            if(((Server_Start.i + 1)% 2) == 0){
-            }else{
-                System.out.println("PARTITA INIZIATA\n");
-            }
-            BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            PrintWriter send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
+            in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             
             while (true) {
                 mes = in.readLine();
@@ -40,7 +40,7 @@ public class Server_Thread extends Thread{
                 send.println(mes);
             }
         } catch (IOException ex) {
-            Logger.getLogger(Server_Thread.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Client_Socket.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
