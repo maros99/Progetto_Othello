@@ -17,14 +17,20 @@ public class Server_Thread extends Thread{
 
     private Socket s;
     private String mes;
+    private int i;
 
-    public Server_Thread(Socket s) {
+    public Server_Thread(Socket s, int i) {
         this.s = s;
+        this.i = i;
         System.out.println("Connessione stabilita\n\n");
     }
 
-    public void run() {       
-        try {
+    public void run(){       
+        try{
+            if(((Server_Start.i + 1)% 2) == 0){
+            }else{
+                System.out.println("PARTITA INIZIATA\n");
+            }
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             PrintWriter send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             
@@ -37,6 +43,6 @@ public class Server_Thread extends Thread{
             Logger.getLogger(Server_Thread.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        
     }
+   
 }

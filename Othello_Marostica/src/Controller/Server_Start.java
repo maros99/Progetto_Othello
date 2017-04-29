@@ -9,20 +9,25 @@ package Controller;
  * @author marostica.lorenzo
  */
 
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
+import java.util.*;
 
 public class Server_Start {
-    private static int ID = 0;
-    private static int i = 0;
-    private static Server_Thread ar_client[];
+    private int ID = 0;
+    public static int i = 0;
+    private static ArrayList BR;
+    private static ArrayList BW;
     public Server_Start() {
-        ar_client = new Server_Thread[100];
+        BW = new ArrayList<BufferedWriter>();
+        BR = new ArrayList<BufferedReader>();
         try{    
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
-                ar_client[i] = new Server_Thread(ss.accept()).start();
-
+                if((i%2) == 1){
+                    ID++;
+                }
+                i++;
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandleShake
                 il server rimanda indietro il pacchetto e basta.
                 Nel frattempo lui aspetta sempre, creando sempre un'altro thread per connessione
@@ -32,4 +37,9 @@ public class Server_Start {
             System.err.print(e);
         }
     }
+    
+    public static Server_Thread getThread(int c){
+        return ar_client[c];
+    }
+    
 }
