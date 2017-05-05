@@ -28,20 +28,17 @@ public class Client_Socket {
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
-        Server_Start.add(send, in);
-        Connect();      
+        Server_Start.add(this);
     }
 
     
     public void Connect(){
         try{            
-                mes = in.readLine();
-                System.out.println(mes);
-                send.println(mes);
+            mes = in.readLine();
+            System.out.println(mes);
+            send.println(mes);
         }catch (IOException ex) {
             System.out.println("Client " + ID + " disconnesso");
-        }
-        
+        }        
     }
-   
 }
