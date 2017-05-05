@@ -25,8 +25,9 @@ public class Server_Start {
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
                 new Client_Socket(ss.accept(), i);
-                if((i%2) == 1){
-                }
+                    if((i%2) == 1){
+                        
+                    }
                 i++;
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandShake
                 il server rimanda indietro il pacchetto e basta.
@@ -41,6 +42,16 @@ public class Server_Start {
     public static void add(PrintWriter p, BufferedReader r){
         PW.add(p);
         BR.add(r);
+    }
+    
+    public static PrintWriter getPrint(int i){
+        PrintWriter w = (PrintWriter) PW.get(i);
+        return w;
+    }
+    
+    public static BufferedReader getReader(int i){
+        BufferedReader b = (BufferedReader) BR.get(i);
+        return b;
     }
     
 }

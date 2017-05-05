@@ -29,19 +29,15 @@ public class Client_Socket {
         send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
         Server_Start.add(send, in);
-        Connect();
-        
+        Connect();      
     }
 
     
     public void Connect(){
-        try{
-            
-            while (true) {
+        try{            
                 mes = in.readLine();
                 System.out.println(mes);
                 send.println(mes);
-            }
         }catch (IOException ex) {
             System.out.println("Client " + ID + " disconnesso");
         }
