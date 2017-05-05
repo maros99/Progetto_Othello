@@ -11,7 +11,7 @@ public class InGame extends Thread{
     }
     
     public void run(){
-        
+        System.out.println("Partita in corso");
     }
     
 }
