@@ -32,13 +32,7 @@ public class Client_Socket {
     }
 
     
-    public void Connect(){
-        try{            
-            mes = in.readLine();
-            System.out.println(mes);
-            send.println(mes);
-        }catch (IOException ex) {
-            System.out.println("Client " + ID + " disconnesso");
-        }        
+    public void Send(String s){         
+            send.println(s);       
     }
 }
