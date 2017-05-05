@@ -7,6 +7,7 @@ package Controller;
 
 import lib.Time;
 import controller.ClientProva;
+import java.util.Scanner;
 
 /**
  *
@@ -14,8 +15,18 @@ import controller.ClientProva;
  */
 public class Main_Prova {
     
+    static Scanner input = new Scanner(System.in);
+    
     public static void main(String[] args) {
-        Server_Start s = new Server_Start();    
+        String a = input.next();
+        switch(a){          
+            case "s":
+                Server_Start s = new Server_Start();   
+            break;
+            case "c":
+                ClientProva c = new ClientProva();
+            break;
+        }
     }
     
 }
