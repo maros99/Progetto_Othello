@@ -16,11 +16,11 @@ import java.util.*;
 public class Server_Start {
     public static int i = 0;
     private static ArrayList BR;
-    private static ArrayList BW;
+    private static ArrayList PW;
     
     public Server_Start() {
-        BW = new ArrayList<PrintWriter>();
-        BR = new ArrayList<BufferedReader>(); 
+        PW = new ArrayList<PrintWriter>();
+        BR = new ArrayList<BufferedReader>();
         try{    
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
@@ -28,7 +28,7 @@ public class Server_Start {
                 if((i%2) == 1){
                 }
                 i++;
-              /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHanleShake
+              /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandShake
                 il server rimanda indietro il pacchetto e basta.
                 Nel frattempo lui aspetta sempre, creando sempre un altro thread per connessione
               */
@@ -36,6 +36,11 @@ public class Server_Start {
         }catch(IOException e){
             System.err.print(e);
         }
+    }
+    
+    public static void add(PrintWriter p, BufferedReader r){
+        PW.add(p);
+        BR.add(r);
     }
     
 }

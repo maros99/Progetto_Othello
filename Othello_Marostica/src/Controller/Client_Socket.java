@@ -11,6 +11,7 @@ package Controller;
  */
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class Client_Socket {
@@ -27,21 +28,22 @@ public class Client_Socket {
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
+        Server_Start.add(send, in);
         Connect();
+        
     }
 
+    
     public void Connect(){
         try{
-            in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             
             while (true) {
                 mes = in.readLine();
                 System.out.println(mes);
                 send.println(mes);
             }
-        } catch (IOException ex) {
-            Logger.getLogger(Client_Socket.class.getName()).log(Level.SEVERE, null, ex);
+        }catch (IOException ex) {
+            System.out.println("Client " + ID + " disconnesso");
         }
         
     }

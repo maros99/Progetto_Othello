@@ -27,8 +27,6 @@ public class ClientProva {
             while (true) {
             try {
                 sock_out.println(std_in.readLine());
-                sock_out.println("ECHO");
-                System.out.println(sock_in.readLine());
                 System.out.println(sock_in.readLine());
             } catch (SocketException e) {
                 System.err.print("Connessione chiusa");
