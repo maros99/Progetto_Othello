@@ -25,7 +25,6 @@ public class ClientProva {
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));    
                 while (true) {
-                    sock_out.println(std_in.readLine());
                     System.out.println(sock_in.readLine());
                     //System.err.print("Connessione chiusa");
                 }
