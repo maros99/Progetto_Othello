@@ -24,13 +24,11 @@ public class Main_Prova {
     public static void main(String[] args) {
         Object sel_input = JOptionPane.showInputDialog(null, "Scegli modalità", "Start", JOptionPane.INFORMATION_MESSAGE, null, Values, Values[0]);
         String in = sel_input.toString();
-        switch(in){
-            case "Client":
-               c = new ClientProva();
-            break;
-            case "Sever":
-                s = new Server_Start();
-            break;
+        if(in.equals("Client")){
+            c = new ClientProva();
+        }else{
+            s = new Server_Start();
+            s.search();
         }
     }
 }
