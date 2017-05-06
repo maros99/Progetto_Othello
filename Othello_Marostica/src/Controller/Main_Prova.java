@@ -8,6 +8,7 @@ package Controller;
 import lib.Time;
 import controller.ClientProva;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,17 +17,20 @@ import java.util.Scanner;
 public class Main_Prova {
     
     static Scanner input = new Scanner(System.in);
+    static Object[] Values = {"Client", "Server"};
+    private static Server_Start s;
+    private static ClientProva c;
     
     public static void main(String[] args) {
-        String a = input.next();
-        switch(a){          
-            case "s":
-                Server_Start s = new Server_Start();   
+        Object sel_input = JOptionPane.showInputDialog(null, "Scegli modalità", "Start", JOptionPane.INFORMATION_MESSAGE, null, Values, Values[0]);
+        String in = sel_input.toString();
+        switch(in){
+            case "Client":
+               c = new ClientProva();
             break;
-            case "c":
-                ClientProva c = new ClientProva();
+            case "Sever":
+                s = new Server_Start();
             break;
         }
     }
-    
 }
