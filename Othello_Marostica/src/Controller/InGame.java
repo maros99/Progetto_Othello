@@ -1,5 +1,7 @@
 package Controller;
 
+import java.io.IOException;
+
 
 public class InGame extends Thread{
     
@@ -12,8 +14,18 @@ public class InGame extends Thread{
     
     public void run(){
         System.out.println("Partita in corso");
-        c1.Send("Tocca a te");
-        c2.Send("Stai fermo dio cane");
+        intro(c1);
+        intro(c2);
     }
     
+    public void intro(Client_Socket c){
+        c.Send("Inserisci");
+        try{
+            String s = c.getReader().readLine();
+            c.setNome(s);
+        }catch(IOException e){
+            System.out.println(e);
+        }
+    }
+
 }

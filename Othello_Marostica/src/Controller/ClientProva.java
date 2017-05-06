@@ -14,9 +14,10 @@ import java.net.*;
  */
 public class ClientProva {
 
-    BufferedReader sock_in;
-    PrintWriter sock_out;
-    BufferedReader std_in;
+    private BufferedReader sock_in;
+    private PrintWriter sock_out;
+    private BufferedReader std_in;
+    private String mes;
 
     public ClientProva() {
         try {
@@ -25,8 +26,12 @@ public class ClientProva {
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));    
                 while (true) {
-                    System.out.println(sock_in.readLine());
-                    //System.err.print("Connessione chiusa");
+                    mes = sock_in.readLine();
+                    switch(mes){
+                        case "Inserisci":
+                            System.out.println("Inserire Nome Utente");
+                            sock_out.println(std_in.readLine());
+                    }
                 }
             }catch (IOException e) {
                 System.err.print(e);

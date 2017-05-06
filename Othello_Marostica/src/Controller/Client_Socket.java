@@ -14,6 +14,8 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import Model.Pedina;
+
 public class Client_Socket {
 
     private Socket s;
@@ -21,6 +23,7 @@ public class Client_Socket {
     private int ID;
     private PrintWriter send;
     private BufferedReader in;
+    private String Nome;
 
     public Client_Socket(Socket s, int ID) throws IOException {
         this.s = s;
@@ -30,9 +33,21 @@ public class Client_Socket {
         System.out.println("Connessione stabilita\n\n");
         Server_Start.add(this);
     }
-
     
     public void Send(String s){         
             send.println(s);       
     }
+    
+    public String getNome(){
+        return Nome;
+    }
+    
+    public BufferedReader getReader(){
+        return in;
+    }
+    
+    public void setNome(String s){
+        Nome = s;
+    }
+    
 }
