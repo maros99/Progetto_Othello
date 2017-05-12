@@ -12,6 +12,7 @@ package Model;
 public class Pedina {
     
     private boolean bianco = false;
+    private boolean nero = !bianco;
     public boolean visibility = false ;
     
     public boolean getColor(){
