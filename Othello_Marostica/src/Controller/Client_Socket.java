@@ -31,7 +31,6 @@ public class Client_Socket {
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         send = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
         System.out.println("Connessione stabilita\n\n");
-        Server_Start.add(this);
     }
     
     public void Send(String s){         

@@ -31,6 +31,15 @@ public class ClientProva {
                         case "Inserisci":
                             System.out.println("Inserire Nome Utente");
                             sock_out.println(std_in.readLine());
+                        break;
+                        case "Attendi":
+                            System.out.println("In attesa dell'avversario...");
+                        break;
+                        case "Nome":
+                            System.out.println(sock_in.readLine());
+                            System.out.println(sock_in.readLine()); 
+                        case "Posizione":
+                            
                     }
                 }
             }catch (IOException e) {

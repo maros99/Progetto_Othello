@@ -24,10 +24,6 @@ public class Server_Start {
         Partite = new InGame[100];
     }
     
-    public static void add(Client_Socket c){
-        CSs.add(c);
-    }
-    
     public static Client_Socket getClient(int i){
         Client_Socket c =(Client_Socket) CSs.get(i);
         return c;
@@ -38,11 +34,13 @@ public class Server_Start {
             ServerSocket ss = new ServerSocket(2250);
             while (true) {
                 Client_Socket miozio = new Client_Socket(ss.accept(), i);
-                
+                CSs.add(miozio);
                     if((i%2) == 1){
                         Partite[nPartite] = new InGame(getClient(i-1), getClient(i));
                         Partite[nPartite].start();
                         System.out.println("Partita iniziata");
+                    }else{
+                        miozio.Send("Attendi");
                     }
                 i++;
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandShake

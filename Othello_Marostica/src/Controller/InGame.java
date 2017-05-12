@@ -15,12 +15,15 @@ public class InGame extends Thread {
 
     public void run() {
         System.out.println("Partita in corso");
-        intro(c1);
-        intro(c2);
+        intro(c1, c2);
+        intro(c2, c1);
+        Nome(c1, c2);
+        Nome(c2, c1);
     }
 
-    public void intro(Client_Socket c) {
+    public void intro(Client_Socket c, Client_Socket attesa) {
         c.Send("Inserisci");
+        attesa.Send("Attendi");
         try {
             String s = c.getReader().readLine();
             c.setNome(s);
@@ -28,6 +31,12 @@ public class InGame extends Thread {
         } catch (IOException e) {
             System.out.println(e);
         }
+    }
+    
+    public void Nome(Client_Socket invio, Client_Socket nome){
+        invio.Send("Nome");
+        invio.Send("Partita inziata!");
+        invio.Send("Sei contro: " + nome.getNome());
     }
 
 }
