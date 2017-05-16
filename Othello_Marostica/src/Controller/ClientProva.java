@@ -12,7 +12,7 @@ import java.net.*;
  *
  * @author marostica.lorenzo
  */
-public class ClientProva {
+public class ClientProva extends Thread{
 
     private BufferedReader sock_in;
     private PrintWriter sock_out;
@@ -34,6 +34,18 @@ public class ClientProva {
                         break;
                         case "Attendi":
                             System.out.println("In attesa dell'avversario...");
+                        break;
+                        case "Ricerca":
+                            System.out.print("Ricerca avversario in corso");
+                            try{
+                                for(int i = 0; i < 3; i++){    
+                                    System.out.print(".");
+                                    this.sleep(1000);
+                                }
+                            }catch(InterruptedException e){
+                                System.err.println(e);
+                            }
+                            System.out.println();
                         break;
                         case "Nome":
                             System.out.println(sock_in.readLine());

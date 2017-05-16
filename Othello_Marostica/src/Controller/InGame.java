@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+import java.net.SocketException;
 
 public class InGame extends Thread {
 
@@ -15,13 +16,18 @@ public class InGame extends Thread {
 
     public void run() {
         System.out.println("Partita in corso");
-        intro(c1, c2);
-        intro(c2, c1);
-        Nome(c1, c2);
-        Nome(c2, c1);
+        try{
+            intro(c1, c2);
+            intro(c2, c1);
+            Nome(c1, c2);
+            Nome(c2, c1);
+        }catch(SocketException e){
+            System.err.println("GIOCATORE DISCONNESSO");
+            Server_Start.i--;
+        }
     }
 
-    public void intro(Client_Socket c, Client_Socket attesa) {
+    public void intro(Client_Socket c, Client_Socket attesa) throws SocketException {
         c.Send("Inserisci");
         attesa.Send("Attendi");
         try {
@@ -33,7 +39,7 @@ public class InGame extends Thread {
         }
     }
     
-    public void Nome(Client_Socket invio, Client_Socket nome){
+    public void Nome(Client_Socket invio, Client_Socket nome) throws SocketException{
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());

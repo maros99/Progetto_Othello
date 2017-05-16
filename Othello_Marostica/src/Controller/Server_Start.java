@@ -40,7 +40,7 @@ public class Server_Start {
                         Partite[nPartite].start();
                         System.out.println("Partita iniziata");
                     }else{
-                        miozio.Send("Attendi");
+                        miozio.Send("Ricerca");
                     }
                 i++;
               /*viene creato un thread SOLO QUANDO un client si collega dopo il 3wayHandShake
