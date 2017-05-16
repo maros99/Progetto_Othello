@@ -32,18 +32,22 @@ public class mappa {
     public boolean vuota(int riga, int colonna) {
         return tavola[riga][colonna] == Cella.Vuota;
     }
-    public boolean bianco(int r, int c){
-        if(r < 8 && c < 8)
-   tavola[r][c] = Cella.Bianco;  
-      else
+
+    public boolean bianco(int r, int c) {
+        if (r < 8 && c < 8) {
+            tavola[r][c] = Cella.Bianco;
+        } else {
             System.out.println("reinserisci i dati ");
+        }
         return true;
     }
-    public boolean nero(int r, int c){
-      if(r < 8 && c < 8)
-          tavola[r][c] = Cella.Nera;
-      else
-          System.out.println("reinserisce i dati");
-      return false;
+
+    public boolean nero(int r, int c) {
+        if (r < 8 && c < 8) {
+            tavola[r][c] = Cella.Nera;
+        } else {
+            System.out.println("reinserisce i dati");
+        }
+        return false;
     }
 }
