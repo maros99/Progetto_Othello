@@ -67,8 +67,13 @@ public class ClientProva extends Thread{
             }
     }
         
-        // METODO AGGIUNTO
-        public static String Intro(){
+    /**
+     *
+     * @return 
+     * Metodo che crea 3 JOptionPane :inserimento stringa username, inserimento la conferma o annullamento e pop up di operazione finita
+     * 
+     */
+    public static String Intro(){
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
