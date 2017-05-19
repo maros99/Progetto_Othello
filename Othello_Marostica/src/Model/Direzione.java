@@ -7,9 +7,9 @@ package Model;
 public class Direzione {
      public int driga;
      public int dcolonna;
-     public Direzione(int r, int s){
+     public Direzione(int r, int c){
         driga = r;
-        dcolonna =s;
+        dcolonna =c;
      }
     public String MostraDirezione(){
     if(driga == -1 && dcolonna == 0){
