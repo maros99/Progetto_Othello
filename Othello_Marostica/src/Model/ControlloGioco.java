@@ -7,32 +7,11 @@ package Model;
 
 /**
  *
- * @author diallo.thiernooumaro
+ * Intefaccia che definisce il comportamento generale di riga - colonna - colore di tutte le pedine
  */
 public interface ControlloGioco {
     public boolean ControlDisco(int riga, int colonna, boolean colore);
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*

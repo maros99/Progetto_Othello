@@ -1,22 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
-/**
- *
- * @author marostica.lorenzo
- */
 public class Pedinax {
     
     private boolean bianco = false;
-    private boolean nero = !bianco;
+    private boolean nero =! bianco;
     public boolean visibility = false ;
     
+    /**
+     * Metodo che resituisce il colore della pedina
+     * @return
+     */
     public boolean getColor(){
         return bianco;
     }
-    
 }
