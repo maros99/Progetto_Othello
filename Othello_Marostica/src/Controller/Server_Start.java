@@ -9,9 +9,13 @@ package Controller;
  * @author marostica.lorenzo
  */
 
+import java.awt.Image;
 import java.io.*;
 import java.net.ServerSocket;
 import java.util.*;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
 public class Server_Start {
     public static int i = 0;

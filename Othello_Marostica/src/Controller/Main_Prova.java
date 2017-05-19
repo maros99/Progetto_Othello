@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import View.Ricerca_Utente;
 import lib.Time;
 import controller.ClientProva;
 import java.util.Scanner;
@@ -22,6 +23,7 @@ public class Main_Prova {
     private static ClientProva c;
     
     public static void main(String[] args) {
+        //new Ricerca_Utente().setVisible(true);
         Object sel_input = JOptionPane.showInputDialog(null, "Scegli modalità", "Start", JOptionPane.INFORMATION_MESSAGE, null, Values, Values[0]);
         String in = sel_input.toString();
         if(in.equals("Client")){
