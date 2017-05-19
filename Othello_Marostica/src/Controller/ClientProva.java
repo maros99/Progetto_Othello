@@ -7,6 +7,7 @@ package controller;
 
 import java.io.*;
 import java.net.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,6 +19,11 @@ public class ClientProva extends Thread{
     private PrintWriter sock_out;
     private BufferedReader std_in;
     private String mes;
+    
+    //AGGIUNTE *****
+    public static int a = JOptionPane.NO_OPTION;
+    public static String username = "";
+    // FINITE
 
     public ClientProva() {
         try {
@@ -29,8 +35,10 @@ public class ClientProva extends Thread{
                     mes = sock_in.readLine();
                     switch(mes){
                         case "Inserisci":
-                            System.out.println("Inserire Nome Utente");
-                            sock_out.println(std_in.readLine());
+                            //Aggiunta ***MODIFICATA***
+                            Intro();
+                            sock_out.println(username);
+                            //*** END ***
                         break;
                         case "Attendi":
                             System.out.println("In attesa dell'avversario...");
@@ -58,4 +66,27 @@ public class ClientProva extends Thread{
                 System.err.print(e);
             }
     }
+        
+        // METODO AGGIUNTO
+        public static String Intro(){
+            //se a non corrisponde al vero, allora il while continua
+            while(a != JOptionPane.YES_OPTION){
+
+                username = JOptionPane.showInputDialog ("Scegli il tuo username"); 
+                // l'usernamene che viene inserito nel JOption pane non è altro che una Stringa. La possiamo salvare e passarla da qualche altra parte.
+                    if(username == null || "".equals(username) ){
+                        a = JOptionPane.NO_OPTION;
+                        JOptionPane.showMessageDialog(null, "INSERIMENTO OBBLIGATORIO");  
+
+                    }else{
+                        a = JOptionPane.YES_OPTION;
+                        a = JOptionPane.showConfirmDialog(null, "Confermi?");
+                    }
+                }
+
+            JOptionPane.showMessageDialog(null, username);
+            //se è stato inserito lo username correttamente, allora uscirrà questo messaggio
+            return username;
+        }
+        //METODO FINITO
 }

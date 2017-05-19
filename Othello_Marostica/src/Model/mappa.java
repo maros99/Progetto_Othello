@@ -11,7 +11,7 @@ import Model.Cella;
  *
  * @author Paolo
  */
-public class mappa {
+public class mappa{
 
     public Cella[][] tavola;
 
@@ -34,20 +34,21 @@ public class mappa {
     }
 
     public boolean bianco(int r, int c) {
-        if (r < 8 && c < 8) {
-            tavola[r][c] = Cella.Bianco;
-        } else {
-            System.out.println("reinserisci i dati ");
-        }
-        return true;
+       if(tavola[r][c] == Cella.Bianco)
+           return true;
+       else
+           return false;
     }
-
+       /**
+   * @param coordinata x La x (0-based) della cella
+   * @param y coordinata y (0-based) della cella
+   *  @return true se la cella descritta dalle coordinate contiene un bianco
+   * false altrimenti
+   */
     public boolean nero(int r, int c) {
-        if (r < 8 && c < 8) {
-            tavola[r][c] = Cella.Nera;
-        } else {
-            System.out.println("reinserisce i dati");
-        }
-        return false;
+        if(tavola[r][c] == Cella.Nera)
+            return true;
+        else
+            return false;
     }
 }
