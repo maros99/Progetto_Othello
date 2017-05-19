@@ -11,10 +11,6 @@ package Controller;
  */
 import java.io.*;
 import java.net.Socket;
-import java.net.SocketException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import Model.Pedina;
 
 public class Client_Socket {
 
@@ -25,6 +21,14 @@ public class Client_Socket {
     private BufferedReader in;
     private String Nome;
 
+    /**
+     *
+     * @param s
+     * @param ID
+     * @throws IOException
+     * Costruttore oggetto Socket
+     * Gestione della connessione con il server con gli Stream
+     */
     public Client_Socket(Socket s, int ID) throws IOException {
         this.s = s;
         this.ID = ID;
@@ -33,18 +37,34 @@ public class Client_Socket {
         System.out.println("Connessione stabilita\n\n");
     }
     
+    /**
+     * Metodo per inviare una Steinga di testo 
+     * @param s
+     */
     public void Send(String s){         
             send.println(s);       
     }
     
+    /**
+     * Metodo per restituire il nome
+     * @return
+     */
     public String getNome(){
         return Nome;
     }
     
+    /**
+     * Metodo per restituire lo stream Reader
+     * @return
+     */
     public BufferedReader getReader(){
         return in;
     }
     
+    /**
+     * Metodo per settare una stringa
+     * @param s
+     */
     public void setNome(String s){
         Nome = s;
     }

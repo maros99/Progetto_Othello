@@ -5,16 +5,11 @@
  */
 package Controller;
 
-import View.Ricerca_Utente;
-import lib.Time;
 import controller.ClientProva;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author marostica.lorenzo
- */
+
 public class Main_Prova {
     
     static Scanner input = new Scanner(System.in);
@@ -22,6 +17,13 @@ public class Main_Prova {
     private static Server_Start s;
     private static ClientProva c;
     
+    /**
+     *Main
+     * Creazione di un JOptionPane iniziale per scegliere tra Server o Client
+     * In base alla scelta viene creato l'oggetto server o l'oggetto client
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         try{
             //new Ricerca_Utente().setVisible(true);

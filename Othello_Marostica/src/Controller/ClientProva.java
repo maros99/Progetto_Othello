@@ -9,10 +9,6 @@ import java.io.*;
 import java.net.*;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author marostica.lorenzo
- */
 public class ClientProva extends Thread{
 
     private BufferedReader sock_in;
@@ -20,11 +16,14 @@ public class ClientProva extends Thread{
     private BufferedReader std_in;
     private String mes;
     
-    //AGGIUNTE *****
     public static int a = JOptionPane.NO_OPTION;
     public static String username = "";
-    // FINITE
 
+    /**
+     * Costruttore
+     * Creazione Socket con IP del server
+     * Gestione con switch in base alla stringa ricevuta dal server
+     */
     public ClientProva() {
         try {
             Socket s = new Socket("10.1.33.9", 2250);
