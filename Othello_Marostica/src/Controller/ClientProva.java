@@ -16,8 +16,8 @@ public class ClientProva extends Thread{
     private BufferedReader std_in;
     private String mes;
     
-    public static int a = JOptionPane.NO_OPTION;
-    public static String username = "";
+    public int a = JOptionPane.NO_OPTION;
+    private String username = "";
 
     /**
      * Costruttore
@@ -72,7 +72,7 @@ public class ClientProva extends Thread{
      * Metodo che crea 3 JOptionPane :inserimento stringa username, inserimento la conferma o annullamento e pop up di operazione finita
      * 
      */
-    public static String Intro(){
+    public String Intro(){
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
