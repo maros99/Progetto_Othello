@@ -274,7 +274,7 @@ public class Grigliax extends javax.swing.JFrame {
 
         jButton41.setText("4,2");
 
-        jButton42.setText("jButton11");
+        jButton42.setText("2,4");
 
         jButton43.setText("3,3");
 
@@ -338,11 +338,11 @@ public class Grigliax extends javax.swing.JFrame {
             }
         });
 
-        jButton54.setText("jButton11");
+        jButton54.setText("7,3");
 
-        jButton55.setText("jButton11");
+        jButton55.setText("7,4");
 
-        jButton56.setText("jButton11");
+        jButton56.setText("6,4");
 
         jButton57.setText("5,4");
         jButton57.addActionListener(new java.awt.event.ActionListener() {
@@ -358,13 +358,13 @@ public class Grigliax extends javax.swing.JFrame {
             }
         });
 
-        jButton59.setText("jButton11");
+        jButton59.setText("7,5");
 
-        jButton60.setText("jButton11");
+        jButton60.setText("6,5");
 
-        jButton61.setText("jButton11");
+        jButton61.setText("4,5");
 
-        jButton62.setText("jButton11");
+        jButton62.setText("3,6");
 
         jButton63.setText("3,7");
         jButton63.addActionListener(new java.awt.event.ActionListener() {
@@ -373,13 +373,13 @@ public class Grigliax extends javax.swing.JFrame {
             }
         });
 
-        jButton64.setText("jButton11");
+        jButton64.setText("3,5");
 
         jButton65.setText("2,7");
 
-        jButton66.setText("jButton11");
+        jButton66.setText("2,5");
 
-        jButton67.setText("jButton11");
+        jButton67.setText("2,6");
 
         jButton68.setText("6,6");
         jButton68.addActionListener(new java.awt.event.ActionListener() {
@@ -388,9 +388,9 @@ public class Grigliax extends javax.swing.JFrame {
             }
         });
 
-        jButton69.setText("jButton11");
+        jButton69.setText("5,6");
 
-        jButton70.setText("jButton11");
+        jButton70.setText("4,6");
 
         jButton71.setText("5,5");
         jButton71.addActionListener(new java.awt.event.ActionListener() {
@@ -399,13 +399,13 @@ public class Grigliax extends javax.swing.JFrame {
             }
         });
 
-        jButton72.setText("jButton11");
+        jButton72.setText("7,6");
 
-        jButton73.setText("jButton11");
+        jButton73.setText("4,7");
 
-        jButton74.setText("jButton11");
+        jButton74.setText("5,7");
 
-        jButton75.setText("jButton11");
+        jButton75.setText("6,7");
 
         jButton76.setText("7,7");
         jButton76.addActionListener(new java.awt.event.ActionListener() {
