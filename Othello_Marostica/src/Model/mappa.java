@@ -48,11 +48,10 @@ public class mappa{
      * @return
      */
     public boolean bianco(int r, int c) {
-    
         if(tavola[r][c] == Cella.Bianco)
-            return true;
-        else
             return false;
+        else
+            return true;
     }
     
    /**
