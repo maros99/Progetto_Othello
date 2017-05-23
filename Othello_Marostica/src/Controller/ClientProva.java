@@ -35,7 +35,7 @@ public class ClientProva extends Thread{
                     switch(mes){
                         case "Inserisci":
                             //Aggiunta ***MODIFICATA***
-                            Intro();
+                            setUsername();
                             sock_out.println(username);
                             //*** END ***
                         break;
@@ -72,7 +72,7 @@ public class ClientProva extends Thread{
      * Metodo che crea 3 JOptionPane :inserimento stringa username, inserimento la conferma o annullamento e pop up di operazione finita
      * 
      */
-    public String Intro(){
+    public String setUsername(){
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
