@@ -47,7 +47,7 @@ public class Client_Socket {
     
     /**
      * Metodo per restituire il nome
-     * @return
+     * @return Nome
      */
     public String getNome(){
         return Nome;
