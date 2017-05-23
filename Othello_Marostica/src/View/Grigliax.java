@@ -253,6 +253,11 @@ public class Grigliax extends javax.swing.JFrame {
         });
 
         jButton36.setText("2,2");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
 
         jButton37.setText("3,1");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
@@ -264,6 +269,11 @@ public class Grigliax extends javax.swing.JFrame {
         jButton38.setText("3,2");
 
         jButton39.setText("2,3");
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
 
         jButton40.setText("4,1");
         jButton40.addActionListener(new java.awt.event.ActionListener() {
@@ -359,12 +369,27 @@ public class Grigliax extends javax.swing.JFrame {
         });
 
         jButton59.setText("7,5");
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
 
         jButton60.setText("6,5");
 
         jButton61.setText("4,5");
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
 
         jButton62.setText("3,6");
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
 
         jButton63.setText("3,7");
         jButton63.addActionListener(new java.awt.event.ActionListener() {
@@ -374,8 +399,18 @@ public class Grigliax extends javax.swing.JFrame {
         });
 
         jButton64.setText("3,5");
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
 
         jButton65.setText("2,7");
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
 
         jButton66.setText("2,5");
 
@@ -389,8 +424,18 @@ public class Grigliax extends javax.swing.JFrame {
         });
 
         jButton69.setText("5,6");
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
 
         jButton70.setText("4,6");
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
 
         jButton71.setText("5,5");
         jButton71.addActionListener(new java.awt.event.ActionListener() {
@@ -400,12 +445,32 @@ public class Grigliax extends javax.swing.JFrame {
         });
 
         jButton72.setText("7,6");
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
 
         jButton73.setText("4,7");
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
 
         jButton74.setText("5,7");
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
 
         jButton75.setText("6,7");
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
 
         jButton76.setText("7,7");
         jButton76.addActionListener(new java.awt.event.ActionListener() {
@@ -850,6 +915,71 @@ public class Grigliax extends javax.swing.JFrame {
         final int riga =6;
        final int colonna = 3;
     }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        final int riga =3;
+       final int colonna = 5;
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        final int riga =3;
+       final int colonna = 6;
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+      final int riga =4;
+       final int colonna = 5;
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+       final int riga =4;
+       final int colonna = 6;
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+      final int riga =7;
+       final int colonna = 5;
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+      final int riga =7;
+       final int colonna = 6;
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+      final int riga =6;
+       final int colonna = 7;
+    }//GEN-LAST:event_jButton75ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+     final int riga = 5;
+       final int colonna = 6;
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+       final int riga =5;
+       final int colonna = 7;
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+       final int riga =4;
+       final int colonna = 7;
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+      final int riga =2;
+       final int colonna = 7;
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        final int riga =2;
+       final int colonna = 3;
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+      final int riga = 2;
+       final int colonna = 2;
+    }//GEN-LAST:event_jButton36ActionPerformed
 
     /**
      * @param args the command line arguments
