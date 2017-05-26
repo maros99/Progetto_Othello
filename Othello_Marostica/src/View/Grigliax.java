@@ -96,6 +96,8 @@ public class Grigliax extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(51, 255, 51));
+
         jButton1.setText("1,3");
 
         jButton2.setText("0,1");
