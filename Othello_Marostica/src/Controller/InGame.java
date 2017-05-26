@@ -28,7 +28,6 @@ public class InGame extends Thread {
             intro(c2, c1);
             Nome(c1, c2);
             Nome(c2, c1);
-            //new Grigliax().setVisible(true);
         }catch(SocketException e){
             System.err.println("GIOCATORE DISCONNESSO");
             Server_Start.i--;
@@ -63,6 +62,7 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
+        new Grigliax().setVisible(true); //WHY NE CREA SOLO UNA?
     }
 
 }
