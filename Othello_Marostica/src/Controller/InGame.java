@@ -64,10 +64,13 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
+        new Grigliax().setVisible(true);
         t = new MyTime();
         t.start();
-        new Grigliax().setVisible(true);
-        
+        /* *** ATTENZIONE ----> PROBLEMA GRANDE CON L'INTERFACCIA GRAFICA
+            HO TOLTO L'OPZIONE EXIT ON CLOSE, SICCOME QUANDO CHIUDEVO L'INTERFACCIA GRAFICA FINIVA ANCHE IL SERVER
+            ORA INVECE IL SERVER RESTA, MA RESTANO IN ESECUZIONE I THREAD ANCHE CHIUDENDO L'INTERFACCIA.... DA RISOLVERE
+        */ 
     }
 
 }
