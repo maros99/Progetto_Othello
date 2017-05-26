@@ -28,7 +28,7 @@ public class InGame extends Thread {
             intro(c2, c1);
             Nome(c1, c2);
             Nome(c2, c1);
-            new Grigliax().setVisible(true);
+            //new Grigliax().setVisible(true);
         }catch(SocketException e){
             System.err.println("GIOCATORE DISCONNESSO");
             Server_Start.i--;
