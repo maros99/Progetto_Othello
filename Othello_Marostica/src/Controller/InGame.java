@@ -28,6 +28,7 @@ public class InGame extends Thread {
             intro(c2, c1);
             Nome(c1, c2);
             Nome(c2, c1);
+            
         }catch(SocketException e){
             System.err.println("GIOCATORE DISCONNESSO");
             Server_Start.i--;
@@ -62,7 +63,12 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
-        new Grigliax().setVisible(true); //WHY NE CREA SOLO UNA?
+        
+    }
+    public void gameGUI(){
+        new Grigliax().setVisible(true); //WHY NE CREA DUE NELLO STESSO PC?
+        //domani lo vediamo con calma. CiaoCiao
+        
     }
 
 }
