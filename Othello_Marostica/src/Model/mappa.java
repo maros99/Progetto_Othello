@@ -11,9 +11,9 @@ package Model;
  * @author Paolo
  */
 public class mappa{
-
+    public Direzione d1;
     public Cella[][] tavola;
-
+    public int xturn = 0;// se la variabile è a 0 partono i bianchi se no i neri                  
     /**
      * Costruttore
      * Creazione di oggetto Cella e inserimento in una matrice.
@@ -52,7 +52,7 @@ public class mappa{
             return false;
         else
             return true;
-    }
+      }
     
    /**
    * @param coordinata x La x (0-based) della cella
@@ -66,4 +66,14 @@ public class mappa{
         else
             return false;
     }
-}
+    public void mosse(){
+        while(xturn!=0){
+         if(tavola[3][5]== Cella.Vuota){
+         
+         
+         }
+    }
+        }
+      }
+    
+    
