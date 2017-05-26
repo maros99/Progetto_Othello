@@ -1,5 +1,7 @@
 package Controller;
 
+import Lib.MyTime;
+import View.Grigliax;
 import java.io.IOException;
 import java.net.SocketException;
 
@@ -7,6 +9,7 @@ public class InGame extends Thread {
 
     private Client_Socket c1, c2;
     private int ID_Partita;
+    MyTime t;
 
     /**
      * Costruttore che assegna gli oggetti passati e genera un numero random per l'ID
@@ -61,6 +64,9 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
+        t = new MyTime();
+        t.start();
+        new Grigliax().setVisible(true);
         
     }
 
