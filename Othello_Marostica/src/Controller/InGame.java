@@ -1,6 +1,5 @@
 package Controller;
 
-import Lib.MyTime;
 import View.Grigliax;
 import java.io.IOException;
 import java.net.SocketException;
@@ -9,7 +8,6 @@ public class InGame extends Thread {
 
     private Client_Socket c1, c2;
     private int ID_Partita;
-    MyTime t;
 
     /**
      * Costruttore che assegna gli oggetti passati e genera un numero random per l'ID
@@ -30,6 +28,7 @@ public class InGame extends Thread {
             intro(c2, c1);
             Nome(c1, c2);
             Nome(c2, c1);
+            new Grigliax().setVisible(true);
         }catch(SocketException e){
             System.err.println("GIOCATORE DISCONNESSO");
             Server_Start.i--;
@@ -64,13 +63,6 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
-        new Grigliax().setVisible(true);
-        t = new MyTime();
-        t.start();
-        /* *** ATTENZIONE ----> PROBLEMA GRANDE CON L'INTERFACCIA GRAFICA
-            HO TOLTO L'OPZIONE EXIT ON CLOSE, SICCOME QUANDO CHIUDEVO L'INTERFACCIA GRAFICA FINIVA ANCHE IL SERVER
-            ORA INVECE IL SERVER RESTA, MA RESTANO IN ESECUZIONE I THREAD ANCHE CHIUDENDO L'INTERFACCIA.... DA RISOLVERE
-        */ 
     }
 
 }
