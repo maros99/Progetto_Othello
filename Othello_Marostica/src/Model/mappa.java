@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package Model;
+import View.Grigliax;
+import java.awt.Color;
+import javax.swing.JButton;
 
 
 /**
@@ -29,7 +32,6 @@ public class mappa{
             }
             
         }
-        
         // si impostano le prime 4 pedine
         tavola[4][3] = Cella.Nera;
         tavola[3][4] = Cella.Nera;
@@ -69,8 +71,8 @@ public class mappa{
     public void mosse(){
         while(xturn!=0){
          if(tavola[3][5]== Cella.Vuota){
-         
-         
+             JButton jButton64;
+      //  jButton64.setBackground(Color.red);
          }
     }
         }
