@@ -17,7 +17,7 @@ public class ClientProva extends Thread{
     private PrintWriter sock_out;
     private BufferedReader std_in;
     private String mes;
-    
+    Ricerca_Utente are;
     public int a = JOptionPane.NO_OPTION;
     private String username = "";
 
@@ -48,7 +48,8 @@ public class ClientProva extends Thread{
                         case "Ricerca":
                             System.out.print("Ricerca avversario in corso");
                             try{
-                                new Ricerca_Utente().setVisible(true);
+                                are = new Ricerca_Utente();
+                                are.setVisible(true);
                                 for(int i = 0; i < 3; i++){    
                                     System.out.print(".");
                                     this.sleep(1000);
@@ -77,6 +78,7 @@ public class ClientProva extends Thread{
      * 
      */
     public void setUsername(){
+        are.dispose();
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
