@@ -5,6 +5,8 @@
  */
 package controller;
 
+import View.Grigliax;
+import View.Ricerca_Utente;
 import java.io.*;
 import java.net.*;
 import javax.swing.JOptionPane;
@@ -15,7 +17,7 @@ public class ClientProva extends Thread{
     private PrintWriter sock_out;
     private BufferedReader std_in;
     private String mes;
-    
+    Ricerca_Utente are;
     public int a = JOptionPane.NO_OPTION;
     private String username = "";
 
@@ -26,34 +28,47 @@ public class ClientProva extends Thread{
      */
     public ClientProva() {
         try {
-            Socket s = new Socket("10.1.33.20", 2250);
+            Socket s = new Socket("10.1.33.25", 2250);
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
-            std_in = new BufferedReader(new InputStreamReader(System.in));    
+            std_in = new BufferedReader(new InputStreamReader(System.in));
+            
                 while (true) {
                     mes = sock_in.readLine();
+                    
                     switch(mes){
+                        
                         case "Inserisci":
                             //Aggiunta ***MODIFICATA***
                             setUsername();
                             sock_out.println(username);
                             //*** END ***
                         break;
+                        
                         case "Attendi":
                             System.out.println("In attesa dell'avversario...");
                         break;
+                        
                         case "Ricerca":
                             System.out.print("Ricerca avversario in corso");
+                            
                             try{
+                                are = new Ricerca_Utente();
+                                are.setVisible(true);
+                                
                                 for(int i = 0; i < 3; i++){    
                                     System.out.print(".");
                                     this.sleep(1000);
                                 }
+                                
                             }catch(InterruptedException e){
                                 System.err.println(e);
                             }
+                            
                             System.out.println();
+                        
                         break;
+                        
                         case "Nome":
                             System.out.println(sock_in.readLine());
                             System.out.println(sock_in.readLine()); 
@@ -72,7 +87,8 @@ public class ClientProva extends Thread{
      * Metodo che crea 3 JOptionPane :inserimento stringa username, inserimento la conferma o annullamento e pop up di operazione finita
      * 
      */
-    public String setUsername(){
+    public void setUsername(){
+        are.dispose();
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
@@ -90,7 +106,9 @@ public class ClientProva extends Thread{
 
             JOptionPane.showMessageDialog(null, username);
             //se è stato inserito lo username correttamente, allora uscirrà questo messaggio
-            return username;
+            
+            new Grigliax().setVisible(true);
+            
         }
         //METODO FINITO
 }
