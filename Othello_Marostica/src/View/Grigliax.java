@@ -746,20 +746,17 @@ public class Grigliax extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-      final int riga = 0;
-      final int colonna  = 0;
+      jButton27.setActionCommand("0,0");
       jButton27.addActionListener(listener);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       final int riga = 0;
-      final int colonna  = 1;
+       jButton2.setActionCommand("0,1");
       jButton2.addActionListener(listener);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-      final int riga = 0;
-      final int colonna  = 3;
+      jButton22.setActionCommand("0,3");
       jButton22.addActionListener(listener);
     }//GEN-LAST:event_jButton22ActionPerformed
 
@@ -1054,7 +1051,7 @@ public class Grigliax extends javax.swing.JFrame {
     private class Mybuttonlistener implements ActionListener{
 
         public void actionPerformed(ActionEvent ae) {
-            
+            System.out.println(ae.getActionCommand());
         }
 
    
