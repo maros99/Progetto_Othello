@@ -106,7 +106,9 @@ public class ClientProva extends Thread{
 
             JOptionPane.showMessageDialog(null, username);
             //se è stato inserito lo username correttamente, allora uscirrà questo messaggio
+            
             new Grigliax().setVisible(true);
+            
         }
         //METODO FINITO
 }
