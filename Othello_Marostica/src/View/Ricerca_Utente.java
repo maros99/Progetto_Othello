@@ -32,8 +32,11 @@ public class Ricerca_Utente extends javax.swing.JFrame {
         Hourglass = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBounds(new java.awt.Rectangle(200, 200, 0, 0));
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setBackground(new java.awt.Color(250, 250, 250));
+        setBounds(new java.awt.Rectangle(805, 325, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        setResizable(false);
 
         Hourglass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/hourglass.gif"))); // NOI18N
 
