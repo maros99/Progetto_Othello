@@ -5,17 +5,21 @@
  */
 package View;
 
+import Lib.MyTime;
+
 /**
  *
  * @author diallo.thiernooumaro
  */
 public class Grigliax extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Grigliax
-     */
+    MyTime t;
+    
+    
     public Grigliax() {
         initComponents();
+        t = new MyTime();
+        t.start();
     }
 
     /**
@@ -704,6 +708,8 @@ public class Grigliax extends javax.swing.JFrame {
         jTextField1.setBackground(new java.awt.Color(204, 204, 204));
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(150, 75, 0)));
+
+        DisplayTimer.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
