@@ -31,34 +31,44 @@ public class ClientProva extends Thread{
             Socket s = new Socket("10.1.33.25", 2250);
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
-            std_in = new BufferedReader(new InputStreamReader(System.in));    
+            std_in = new BufferedReader(new InputStreamReader(System.in));
+            
                 while (true) {
                     mes = sock_in.readLine();
+                    
                     switch(mes){
+                        
                         case "Inserisci":
                             //Aggiunta ***MODIFICATA***
                             setUsername();
                             sock_out.println(username);
                             //*** END ***
                         break;
+                        
                         case "Attendi":
                             System.out.println("In attesa dell'avversario...");
                         break;
                         
                         case "Ricerca":
                             System.out.print("Ricerca avversario in corso");
+                            
                             try{
                                 are = new Ricerca_Utente();
                                 are.setVisible(true);
+                                
                                 for(int i = 0; i < 3; i++){    
                                     System.out.print(".");
                                     this.sleep(1000);
                                 }
+                                
                             }catch(InterruptedException e){
                                 System.err.println(e);
                             }
+                            
                             System.out.println();
+                        
                         break;
+                        
                         case "Nome":
                             System.out.println(sock_in.readLine());
                             System.out.println(sock_in.readLine()); 
