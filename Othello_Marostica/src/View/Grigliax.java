@@ -6,13 +6,16 @@
 package View;
 
 import Lib.MyTime;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import Model.mappa;
 
 /**
  *
  * @author diallo.thiernooumaro
  */
 public class Grigliax extends javax.swing.JFrame {
-
+  Mybuttonlistener listener = new Mybuttonlistener();
     MyTime t;
     
     
@@ -745,259 +748,317 @@ public class Grigliax extends javax.swing.JFrame {
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
       final int riga = 0;
       final int colonna  = 0;
-      
+      jButton27.addActionListener(listener);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        final int riga = 0;
       final int colonna  = 1;
+      jButton2.addActionListener(listener);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
       final int riga = 0;
       final int colonna  = 3;
+      jButton22.addActionListener(listener);
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
         final int riga = 5;
       final int colonna  = 1;
+      jButton44.addActionListener(listener);
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
        final int riga = 0;
       final int colonna  = 2;
+      jButton24.addActionListener(listener);
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
          final int riga = 0;
       final int colonna  = 4;
+      jButton19.addActionListener(listener);
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         final int riga = 0;
       final int colonna  = 5;
+      jButton20.addActionListener(listener);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         final int riga = 0;
       final int colonna  = 6;
+      jButton16.addActionListener(listener);
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
       final int riga = 0;
       final int colonna  = 7;
+      jButton9.addActionListener(listener);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
        final int riga = 1;
       final int colonna  = 0;
+      jButton25.addActionListener(listener);
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         final int riga = 2;
       final int colonna  = 0;
+      jButton29.addActionListener(listener);
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
          final int riga = 3;
       final int colonna  = 0;
+      jButton30.addActionListener(listener);
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
     final int riga = 4;
       final int colonna  = 0;
+      jButton31.addActionListener(listener);
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
        final int riga = 5;
       final int colonna  = 0;
+      jButton32.addActionListener(listener);
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
       final int riga = 6;
       final int colonna  = 0;
+      jButton33.addActionListener(listener);
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
        final int riga = 7;
       final int colonna  = 0;
+      jButton34.addActionListener(listener);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         final int riga = 1;
       final int colonna  = 1;
+      jButton8.addActionListener(listener);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
     final int riga = 2;
       final int colonna  = 1;
+      jButton35.addActionListener(listener);
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
       final int riga = 3;
       final int colonna  = 1;
+      jButton37.addActionListener(listener);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
       final int riga = 4;
       final int colonna  = 1;
+      jButton40.addActionListener(listener);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
        final int riga = 6;
       final int colonna  = 1;
+      jButton48.addActionListener(listener);
     }//GEN-LAST:event_jButton48ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
      final int riga = 7;
       final int colonna  = 1;
+      jButton47.addActionListener(listener);
     }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
       final int riga =1;
       final int colonna =2;
+       jButton23.addActionListener(listener);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
       final int riga = 7;
-      final int colonna =7;
+      final int colonna =7; 
+      jButton76.addActionListener(listener);
     }//GEN-LAST:event_jButton76ActionPerformed
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
      final int riga = 3;
      final int colonna = 7;
+      jButton63.addActionListener(listener);
     }//GEN-LAST:event_jButton63ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
        final int riga =1;
        final int colonna = 7;
+        jButton28.addActionListener(listener);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
        final int riga =1;
        final int colonna = 6;
+        jButton26.addActionListener(listener);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         final int riga =1;
        final int colonna = 5;
+        jButton21.addActionListener(listener);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         final int riga =1;
        final int colonna = 4;
+        jButton58.addActionListener(listener);
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
        final int riga =6;
        final int colonna = 6;
+        jButton68.addActionListener(listener);
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
         final int riga =5;
        final int colonna = 5;
+        jButton71.addActionListener(listener);
+       
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
      final int riga =4;
        final int colonna = 4;
+       jButton58.addActionListener(listener);
     }//GEN-LAST:event_jButton58ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
        final int riga =5;
        final int colonna = 2;
+       jButton45.addActionListener(listener);
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
        final int riga =6;
        final int colonna = 2;
+       jButton49.addActionListener(listener);
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
       final int riga =7;
        final int colonna = 2;
+       jButton50.addActionListener(listener);
     }//GEN-LAST:event_jButton50ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
       final int riga =5;
        final int colonna = 3;
+       jButton52.addActionListener(listener);
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
        final int riga = 5;
        final int colonna = 4;
+       jButton57.addActionListener(listener);
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         final int riga =6;
        final int colonna = 3;
+       jButton53.addActionListener(listener);
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         final int riga =3;
        final int colonna = 5;
+       jButton64.addActionListener(listener);
     }//GEN-LAST:event_jButton64ActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
         final int riga =3;
        final int colonna = 6;
+       jButton62.addActionListener(listener);
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
       final int riga =4;
        final int colonna = 5;
+       jButton61.addActionListener(listener);
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
        final int riga =4;
        final int colonna = 6;
+       jButton70.addActionListener(listener);
     }//GEN-LAST:event_jButton70ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
       final int riga =7;
        final int colonna = 5;
+       jButton59.addActionListener(listener);
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
       final int riga =7;
        final int colonna = 6;
+       jButton72.addActionListener(listener);
     }//GEN-LAST:event_jButton72ActionPerformed
 
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
       final int riga =6;
        final int colonna = 7;
+       jButton75.addActionListener(listener);
     }//GEN-LAST:event_jButton75ActionPerformed
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
      final int riga = 5;
        final int colonna = 6;
+       jButton69.addActionListener(listener);
     }//GEN-LAST:event_jButton69ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
        final int riga =5;
        final int colonna = 7;
+       jButton74.addActionListener(listener);
     }//GEN-LAST:event_jButton74ActionPerformed
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
        final int riga =4;
        final int colonna = 7;
+       jButton73.addActionListener(listener);
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
       final int riga =2;
        final int colonna = 7;
+       jButton65.addActionListener(listener);
     }//GEN-LAST:event_jButton65ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         final int riga =2;
        final int colonna = 3;
+       jButton39.addActionListener(listener);
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
       final int riga = 2;
        final int colonna = 2;
+       jButton36.addActionListener(listener);
     }//GEN-LAST:event_jButton36ActionPerformed
+    private class Mybuttonlistener implements ActionListener{
 
+        public void actionPerformed(ActionEvent ae) {
+            
+        }
+
+   
+   }
     /**
      * @param args the command line arguments
      */
