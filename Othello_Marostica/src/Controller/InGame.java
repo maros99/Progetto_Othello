@@ -63,12 +63,6 @@ public class InGame extends Thread {
         invio.Send("Nome");
         invio.Send("Partita inziata!");
         invio.Send("Sei contro: " + nome.getNome());
-        
     }
-    public void gameGUI(){
-        new Grigliax().setVisible(true); //WHY NE CREA DUE NELLO STESSO PC?
-        //domani lo vediamo con calma. CiaoCiao
-        
-    }
-
+    
 }

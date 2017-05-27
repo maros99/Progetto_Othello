@@ -32,7 +32,7 @@ public class ClientProva extends Thread{
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));
-            
+            are = new Ricerca_Utente();
                 while (true) {
                     mes = sock_in.readLine();
                     
@@ -40,6 +40,7 @@ public class ClientProva extends Thread{
                         
                         case "Inserisci":
                             //Aggiunta ***MODIFICATA***
+                            are.dispose();
                             setUsername();
                             sock_out.println(username);
                             //*** END ***
@@ -53,7 +54,6 @@ public class ClientProva extends Thread{
                             System.out.print("Ricerca avversario in corso");
                             
                             try{
-                                are = new Ricerca_Utente();
                                 are.setVisible(true);
                                 
                                 for(int i = 0; i < 3; i++){    
@@ -88,7 +88,7 @@ public class ClientProva extends Thread{
      * 
      */
     public void setUsername(){
-        are.dispose();
+
             //se a non corrisponde al vero, allora il while continua
             while(a != JOptionPane.YES_OPTION){
 
