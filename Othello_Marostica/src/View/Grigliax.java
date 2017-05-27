@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package View;
-
 import Lib.MyTime;
 
 /**
@@ -98,6 +97,8 @@ public class Grigliax extends javax.swing.JFrame {
         jButton76 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         DisplayTimer = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 51));
 
