@@ -28,7 +28,7 @@ public class ClientProva extends Thread{
      */
     public ClientProva() {
         try {
-            Socket s = new Socket("10.1.33.25", 2250);
+            Socket s = new Socket("10.1.33.9", 2250);
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));
@@ -72,6 +72,7 @@ public class ClientProva extends Thread{
                         case "Nome":
                             System.out.println(sock_in.readLine());
                             System.out.println(sock_in.readLine()); 
+                            new Grigliax().setVisible(true);
                         case "Posizione":
                             
                     }
@@ -107,7 +108,6 @@ public class ClientProva extends Thread{
             JOptionPane.showMessageDialog(null, username);
             //se è stato inserito lo username correttamente, allora uscirrà questo messaggio
             
-            new Grigliax().setVisible(true);
             
         }
         //METODO FINITO
