@@ -28,7 +28,7 @@ public class ClientProva extends Thread{
      */
     public ClientProva() {
         try {
-            Socket s = new Socket("10.1.33.9", 2250);
+            Socket s = new Socket("10.1.33.10", 2250);
             sock_in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             sock_out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()), true);
             std_in = new BufferedReader(new InputStreamReader(System.in));

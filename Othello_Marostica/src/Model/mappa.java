@@ -16,7 +16,8 @@ import javax.swing.JButton;
 public class mappa{
     public Direzione d1;
     public Cella[][] tavola;
-    public int xturn = 0;// se la variabile è a 0 partono i bianchi se no i neri                  
+    public int xturn = 0;// se la variabile è a 0 partono i bianchi se no i neri 
+    
     /**
      * Costruttore
      * Creazione di oggetto Cella e inserimento in una matrice.
@@ -32,11 +33,13 @@ public class mappa{
             }
             
         }
+        
         // si impostano le prime 4 pedine
         tavola[4][3] = Cella.Nera;
         tavola[3][4] = Cella.Nera;
         tavola[3][3] = Cella.Bianco;
         tavola[4][4] = Cella.Bianco;
+        
     }
 
     public boolean vuota(int riga, int colonna) {
@@ -57,7 +60,7 @@ public class mappa{
       }
     
    /**
-   * @param coordinata x La x (0-based) della cella
+   * @param x coordinata x La x (0-based) della cella
    * @param y coordinata y (0-based) della cella
    *  @return true se la cella descritta dalle coordinate contiene un bianco
    * false altrimenti
@@ -71,7 +74,8 @@ public class mappa{
     public void mosse(){
         while(xturn!=0){
          if(tavola[3][5]== Cella.Vuota){
-             JButton jButton64;
+             JButton jButton64; // ****** DA CAMBIARE = HO RINOMINATO TUTTI I BOTTONI IN VASE ALLE COORDINATE
+             // ma usiamo i bottoni o le celle per lavorare?
       //  jButton64.setBackground(Color.red);
          }
     }

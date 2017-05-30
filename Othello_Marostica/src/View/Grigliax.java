@@ -8,6 +8,7 @@ import Lib.MyTime;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Model.mappa;
+import java.awt.Color;
 
 /**
  *
@@ -17,11 +18,30 @@ public class Grigliax extends javax.swing.JFrame {
   Mybuttonlistener listener = new Mybuttonlistener();
     MyTime t;
     
+    public void setVisibleStart(){
+        ZeroZero.setVisible(false);ZeroUno.setVisible(false);ZeroDue.setVisible(false);ZeroTre.setVisible(false);ZeroQuattro.setVisible(false);ZeroCinque.setVisible(false);
+        ZeroSei.setVisible(false);ZeroSette.setVisible(false);UnoZero.setVisible(false);UnoUNo.setVisible(false);UnoDue.setVisible(false);UnoTre.setVisible(false);UnoQuattro.setVisible(false);
+        UnoCinque.setVisible(false);UnoSei.setVisible(false);UnoSette.setVisible(false);DueZero.setVisible(false);DueUno.setVisible(false);DueDue.setVisible(false);DueTre.setVisible(false);
+        DueQuattro.setVisible(false);DueCinque.setVisible(false);DueSei.setVisible(false);DueSette.setVisible(false);TreZero.setVisible(false);TreUno.setVisible(false);TreDue.setVisible(false);
+        TreCinque.setVisible(false);TreSei.setVisible(false);TreSette.setVisible(false);QuattroZero.setVisible(false);QuattroUni.setVisible(false);QuattroDue.setVisible(false);
+        QuattroCinque.setVisible(false);QuattroSei.setVisible(false);QuattroSette.setVisible(false);CinqueZero.setVisible(false);CinqueUno.setVisible(false);CinqueDue.setVisible(false);
+        CinqueTre.setVisible(false);CinqueQuattro.setVisible(false);CinqueCinque.setVisible(false);CinqueSei.setVisible(false);CinqueSette.setVisible(false);SeiZero.setVisible(false);
+        SeiUno.setVisible(false);SeiDue.setVisible(false);Seitre.setVisible(false);SeiQuattro.setVisible(false);SeiCinque.setVisible(false);SeiSei.setVisible(false);SeiSette.setVisible(false);
+        SetteZero.setVisible(false);SetteUno.setVisible(false);SetteDue.setVisible(false);SetteTre.setVisible(false);SetteQuattro.setVisible(false);SetteCinque.setVisible(false);
+        SetteSei.setVisible(false);SetteSette.setVisible(false);
+        
+        QuattroTre.setBackground(Color.black); // aggiunto
+        TreQuattro.setBackground(Color.black); // aggiunto
+        TreTre.setBackground(Color.white); //aggiunto
+        QuattroQuattro.setBackground(Color.white); //aggiunto
+    }
     
     public Grigliax() {
         initComponents();
+        setVisibleStart();
         t = new MyTime();
         t.start();
+        mappa m = new mappa();
     }
 
     /**
@@ -750,7 +770,7 @@ public class Grigliax extends javax.swing.JFrame {
                 .addComponent(DisplayTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DispalyOthello))
                 .addContainerGap())
         );
@@ -758,309 +778,309 @@ public class Grigliax extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ZeroZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroZeroActionPerformed
-      ZeroZero.setActionCommand("0,0");
-      ZeroZero.addActionListener(listener);
-    }//GEN-LAST:event_ZeroZeroActionPerformed
+    private void SetteSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteSetteActionPerformed
+        final int riga = 7;
+        final int colonna =7;
+        SetteSette.addActionListener(listener);
+    }//GEN-LAST:event_SetteSetteActionPerformed
 
-    private void ZeroUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroUnoActionPerformed
-       ZeroUno.setActionCommand("0,1");
-      ZeroUno.addActionListener(listener);
-    }//GEN-LAST:event_ZeroUnoActionPerformed
+    private void SeiSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiSetteActionPerformed
+        final int riga =6;
+        final int colonna = 7;
+        SeiSette.addActionListener(listener);
+    }//GEN-LAST:event_SeiSetteActionPerformed
 
-    private void ZeroTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroTreActionPerformed
-      ZeroTre.setActionCommand("0,3");
-      ZeroTre.addActionListener(listener);
-    }//GEN-LAST:event_ZeroTreActionPerformed
+    private void CinqueSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueSetteActionPerformed
+        final int riga =5;
+        final int colonna = 7;
+        CinqueSette.addActionListener(listener);
+    }//GEN-LAST:event_CinqueSetteActionPerformed
 
-    private void CinqueUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueUnoActionPerformed
+    private void QuattroSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroSetteActionPerformed
+        final int riga =4;
+        final int colonna = 7;
+        QuattroSette.addActionListener(listener);
+    }//GEN-LAST:event_QuattroSetteActionPerformed
+
+    private void SetteSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteSeiActionPerformed
+        final int riga =7;
+        final int colonna = 6;
+        SetteSei.addActionListener(listener);
+    }//GEN-LAST:event_SetteSeiActionPerformed
+
+    private void CinqueCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueCinqueActionPerformed
+        final int riga =5;
+        final int colonna = 5;
+        CinqueCinque.addActionListener(listener);
+
+    }//GEN-LAST:event_CinqueCinqueActionPerformed
+
+    private void QuattroSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroSeiActionPerformed
+        final int riga =4;
+        final int colonna = 6;
+        QuattroSei.addActionListener(listener);
+    }//GEN-LAST:event_QuattroSeiActionPerformed
+
+    private void CinqueSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueSeiActionPerformed
         final int riga = 5;
-      final int colonna  = 1;
-      CinqueUno.addActionListener(listener);
-    }//GEN-LAST:event_CinqueUnoActionPerformed
+        final int colonna = 6;
+        CinqueSei.addActionListener(listener);
+    }//GEN-LAST:event_CinqueSeiActionPerformed
 
-    private void ZeroDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroDueActionPerformed
-       final int riga = 0;
-      final int colonna  = 2;
-      ZeroDue.addActionListener(listener);
-    }//GEN-LAST:event_ZeroDueActionPerformed
+    private void SeiSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiSeiActionPerformed
+        final int riga =6;
+        final int colonna = 6;
+        SeiSei.addActionListener(listener);
+    }//GEN-LAST:event_SeiSeiActionPerformed
 
-    private void ZeroQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroQuattroActionPerformed
-         final int riga = 0;
-      final int colonna  = 4;
-      ZeroQuattro.addActionListener(listener);
-    }//GEN-LAST:event_ZeroQuattroActionPerformed
+    private void DueSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueSetteActionPerformed
+        final int riga =2;
+        final int colonna = 7;
+        DueSette.addActionListener(listener);
+    }//GEN-LAST:event_DueSetteActionPerformed
 
-    private void ZeroCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroCinqueActionPerformed
-        final int riga = 0;
-      final int colonna  = 5;
-      ZeroCinque.addActionListener(listener);
-    }//GEN-LAST:event_ZeroCinqueActionPerformed
+    private void TreCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreCinqueActionPerformed
+        final int riga =3;
+        final int colonna = 5;
+        TreCinque.addActionListener(listener);
+    }//GEN-LAST:event_TreCinqueActionPerformed
 
-    private void ZeroSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroSeiActionPerformed
-        final int riga = 0;
-      final int colonna  = 6;
-      ZeroSei.addActionListener(listener);
-    }//GEN-LAST:event_ZeroSeiActionPerformed
+    private void TreSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreSetteActionPerformed
+        final int riga = 3;
+        final int colonna = 7;
+        TreSette.addActionListener(listener);
+    }//GEN-LAST:event_TreSetteActionPerformed
 
-    private void ZeroSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroSetteActionPerformed
-      final int riga = 0;
-      final int colonna  = 7;
-      ZeroSette.addActionListener(listener);
-    }//GEN-LAST:event_ZeroSetteActionPerformed
+    private void TreSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreSeiActionPerformed
+        final int riga =3;
+        final int colonna = 6;
+        TreSei.addActionListener(listener);
+    }//GEN-LAST:event_TreSeiActionPerformed
 
-    private void UnoZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoZeroActionPerformed
-       final int riga = 1;
-      final int colonna  = 0;
-      UnoZero.addActionListener(listener);
-    }//GEN-LAST:event_UnoZeroActionPerformed
+    private void QuattroCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroCinqueActionPerformed
+        final int riga =4;
+        final int colonna = 5;
+        QuattroCinque.addActionListener(listener);
+    }//GEN-LAST:event_QuattroCinqueActionPerformed
 
-    private void DueZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueZeroActionPerformed
-        final int riga = 2;
-      final int colonna  = 0;
-      DueZero.addActionListener(listener);
-    }//GEN-LAST:event_DueZeroActionPerformed
+    private void SetteCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteCinqueActionPerformed
+        final int riga =7;
+        final int colonna = 5;
+        SetteCinque.addActionListener(listener);
+    }//GEN-LAST:event_SetteCinqueActionPerformed
 
-    private void TreZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreZeroActionPerformed
-         final int riga = 3;
-      final int colonna  = 0;
-      TreZero.addActionListener(listener);
-    }//GEN-LAST:event_TreZeroActionPerformed
+    private void QuattroQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroQuattroActionPerformed
+        final int riga =4;
+        final int colonna = 4;
+        QuattroQuattro.addActionListener(listener);
+    }//GEN-LAST:event_QuattroQuattroActionPerformed
 
-    private void QuattroZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroZeroActionPerformed
-    final int riga = 4;
-      final int colonna  = 0;
-      QuattroZero.addActionListener(listener);
-    }//GEN-LAST:event_QuattroZeroActionPerformed
+    private void CinqueQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueQuattroActionPerformed
+        final int riga = 5;
+        final int colonna = 4;
+        CinqueQuattro.addActionListener(listener);
+    }//GEN-LAST:event_CinqueQuattroActionPerformed
 
-    private void CinqueZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueZeroActionPerformed
-       final int riga = 5;
-      final int colonna  = 0;
-      CinqueZero.addActionListener(listener);
-    }//GEN-LAST:event_CinqueZeroActionPerformed
+    private void SeitreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeitreActionPerformed
+        final int riga =6;
+        final int colonna = 3;
+        Seitre.addActionListener(listener);
+    }//GEN-LAST:event_SeitreActionPerformed
 
-    private void SeiZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiZeroActionPerformed
-      final int riga = 6;
-      final int colonna  = 0;
-      SeiZero.addActionListener(listener);
-    }//GEN-LAST:event_SeiZeroActionPerformed
+    private void CinqueTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueTreActionPerformed
+        final int riga =5;
+        final int colonna = 3;
+        CinqueTre.addActionListener(listener);
+    }//GEN-LAST:event_CinqueTreActionPerformed
 
-    private void SetteZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteZeroActionPerformed
-       final int riga = 7;
-      final int colonna  = 0;
-      SetteZero.addActionListener(listener);
-    }//GEN-LAST:event_SetteZeroActionPerformed
+    private void SetteDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteDueActionPerformed
+        final int riga =7;
+        final int colonna = 2;
+        SetteDue.addActionListener(listener);
+    }//GEN-LAST:event_SetteDueActionPerformed
 
-    private void UnoUNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoUNoActionPerformed
-        final int riga = 1;
-      final int colonna  = 1;
-      UnoUNo.addActionListener(listener);
-    }//GEN-LAST:event_UnoUNoActionPerformed
-
-    private void DueUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueUnoActionPerformed
-    final int riga = 2;
-      final int colonna  = 1;
-      DueUno.addActionListener(listener);
-    }//GEN-LAST:event_DueUnoActionPerformed
-
-    private void TreUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreUnoActionPerformed
-      final int riga = 3;
-      final int colonna  = 1;
-      TreUno.addActionListener(listener);
-    }//GEN-LAST:event_TreUnoActionPerformed
-
-    private void QuattroUniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroUniActionPerformed
-      final int riga = 4;
-      final int colonna  = 1;
-      QuattroUni.addActionListener(listener);
-    }//GEN-LAST:event_QuattroUniActionPerformed
+    private void SeiDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiDueActionPerformed
+        final int riga =6;
+        final int colonna = 2;
+        SeiDue.addActionListener(listener);
+    }//GEN-LAST:event_SeiDueActionPerformed
 
     private void SeiUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiUnoActionPerformed
-       final int riga = 6;
-      final int colonna  = 1;
-      SeiUno.addActionListener(listener);
+        final int riga = 6;
+        final int colonna  = 1;
+        SeiUno.addActionListener(listener);
     }//GEN-LAST:event_SeiUnoActionPerformed
 
     private void SetteUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteUnoActionPerformed
-     final int riga = 7;
-      final int colonna  = 1;
-      SetteUno.addActionListener(listener);
+        final int riga = 7;
+        final int colonna  = 1;
+        SetteUno.addActionListener(listener);
     }//GEN-LAST:event_SetteUnoActionPerformed
 
-    private void UnoDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoDueActionPerformed
-      final int riga =1;
-      final int colonna =2;
-       UnoDue.addActionListener(listener);
-    }//GEN-LAST:event_UnoDueActionPerformed
+    private void CinqueDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueDueActionPerformed
+        final int riga =5;
+        final int colonna = 2;
+        CinqueDue.addActionListener(listener);
+    }//GEN-LAST:event_CinqueDueActionPerformed
 
-    private void SetteSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteSetteActionPerformed
-      final int riga = 7;
-      final int colonna =7; 
-      SetteSette.addActionListener(listener);
-    }//GEN-LAST:event_SetteSetteActionPerformed
+    private void CinqueUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueUnoActionPerformed
+        final int riga = 5;
+        final int colonna  = 1;
+        CinqueUno.addActionListener(listener);
+    }//GEN-LAST:event_CinqueUnoActionPerformed
 
-    private void TreSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreSetteActionPerformed
-     final int riga = 3;
-     final int colonna = 7;
-      TreSette.addActionListener(listener);
-    }//GEN-LAST:event_TreSetteActionPerformed
+    private void QuattroUniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroUniActionPerformed
+        final int riga = 4;
+        final int colonna  = 1;
+        QuattroUni.addActionListener(listener);
+    }//GEN-LAST:event_QuattroUniActionPerformed
+
+    private void DueTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueTreActionPerformed
+        final int riga =2;
+        final int colonna = 3;
+        DueTre.addActionListener(listener);
+    }//GEN-LAST:event_DueTreActionPerformed
+
+    private void TreUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreUnoActionPerformed
+        final int riga = 3;
+        final int colonna  = 1;
+        TreUno.addActionListener(listener);
+    }//GEN-LAST:event_TreUnoActionPerformed
+
+    private void DueDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueDueActionPerformed
+        final int riga = 2;
+        final int colonna = 2;
+        DueDue.addActionListener(listener);
+    }//GEN-LAST:event_DueDueActionPerformed
+
+    private void DueUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueUnoActionPerformed
+        final int riga = 2;
+        final int colonna  = 1;
+        DueUno.addActionListener(listener);
+    }//GEN-LAST:event_DueUnoActionPerformed
+
+    private void SetteZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteZeroActionPerformed
+        final int riga = 7;
+        final int colonna  = 0;
+        SetteZero.addActionListener(listener);
+    }//GEN-LAST:event_SetteZeroActionPerformed
+
+    private void SeiZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiZeroActionPerformed
+        final int riga = 6;
+        final int colonna  = 0;
+        SeiZero.addActionListener(listener);
+    }//GEN-LAST:event_SeiZeroActionPerformed
+
+    private void CinqueZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueZeroActionPerformed
+        final int riga = 5;
+        final int colonna  = 0;
+        CinqueZero.addActionListener(listener);
+    }//GEN-LAST:event_CinqueZeroActionPerformed
+
+    private void QuattroZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroZeroActionPerformed
+        final int riga = 4;
+        final int colonna  = 0;
+        QuattroZero.addActionListener(listener);
+    }//GEN-LAST:event_QuattroZeroActionPerformed
+
+    private void TreZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreZeroActionPerformed
+        final int riga = 3;
+        final int colonna  = 0;
+        TreZero.addActionListener(listener);
+    }//GEN-LAST:event_TreZeroActionPerformed
+
+    private void DueZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueZeroActionPerformed
+        final int riga = 2;
+        final int colonna  = 0;
+        DueZero.addActionListener(listener);
+    }//GEN-LAST:event_DueZeroActionPerformed
 
     private void UnoSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoSetteActionPerformed
-       final int riga =1;
-       final int colonna = 7;
+        final int riga =1;
+        final int colonna = 7;
         UnoSette.addActionListener(listener);
     }//GEN-LAST:event_UnoSetteActionPerformed
 
     private void UnoSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoSeiActionPerformed
-       final int riga =1;
-       final int colonna = 6;
+        final int riga =1;
+        final int colonna = 6;
         UnoSei.addActionListener(listener);
     }//GEN-LAST:event_UnoSeiActionPerformed
 
     private void UnoCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoCinqueActionPerformed
         final int riga =1;
-       final int colonna = 5;
+        final int colonna = 5;
         UnoCinque.addActionListener(listener);
     }//GEN-LAST:event_UnoCinqueActionPerformed
 
+    private void ZeroDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroDueActionPerformed
+        final int riga = 0;
+        final int colonna  = 2;
+        ZeroDue.addActionListener(listener);
+    }//GEN-LAST:event_ZeroDueActionPerformed
+
+    private void ZeroZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroZeroActionPerformed
+        ZeroZero.setActionCommand("0,0");
+        ZeroZero.addActionListener(listener);
+    }//GEN-LAST:event_ZeroZeroActionPerformed
+
+    private void UnoZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoZeroActionPerformed
+        final int riga = 1;
+        final int colonna  = 0;
+        UnoZero.addActionListener(listener);
+    }//GEN-LAST:event_UnoZeroActionPerformed
+
+    private void UnoDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoDueActionPerformed
+        final int riga =1;
+        final int colonna =2;
+        UnoDue.addActionListener(listener);
+    }//GEN-LAST:event_UnoDueActionPerformed
+
+    private void ZeroTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroTreActionPerformed
+        ZeroTre.setActionCommand("0,3");
+        ZeroTre.addActionListener(listener);
+    }//GEN-LAST:event_ZeroTreActionPerformed
+
+    private void ZeroCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroCinqueActionPerformed
+        final int riga = 0;
+        final int colonna  = 5;
+        ZeroCinque.addActionListener(listener);
+    }//GEN-LAST:event_ZeroCinqueActionPerformed
+
+    private void ZeroQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroQuattroActionPerformed
+        final int riga = 0;
+        final int colonna  = 4;
+        ZeroQuattro.addActionListener(listener);
+    }//GEN-LAST:event_ZeroQuattroActionPerformed
+
+    private void ZeroSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroSeiActionPerformed
+        final int riga = 0;
+        final int colonna  = 6;
+        ZeroSei.addActionListener(listener);
+    }//GEN-LAST:event_ZeroSeiActionPerformed
+
     private void UnoQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoQuattroActionPerformed
         final int riga =1;
-       final int colonna = 4;
+        final int colonna = 4;
         QuattroQuattro.addActionListener(listener);
     }//GEN-LAST:event_UnoQuattroActionPerformed
 
-    private void SeiSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiSeiActionPerformed
-       final int riga =6;
-       final int colonna = 6;
-        SeiSei.addActionListener(listener);
-    }//GEN-LAST:event_SeiSeiActionPerformed
+    private void ZeroSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroSetteActionPerformed
+        final int riga = 0;
+        final int colonna  = 7;
+        ZeroSette.addActionListener(listener);
+    }//GEN-LAST:event_ZeroSetteActionPerformed
 
-    private void CinqueCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueCinqueActionPerformed
-        final int riga =5;
-       final int colonna = 5;
-        CinqueCinque.addActionListener(listener);
-       
-    }//GEN-LAST:event_CinqueCinqueActionPerformed
+    private void UnoUNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoUNoActionPerformed
+        final int riga = 1;
+        final int colonna  = 1;
+        UnoUNo.addActionListener(listener);
+    }//GEN-LAST:event_UnoUNoActionPerformed
 
-    private void QuattroQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroQuattroActionPerformed
-     final int riga =4;
-       final int colonna = 4;
-       QuattroQuattro.addActionListener(listener);
-    }//GEN-LAST:event_QuattroQuattroActionPerformed
-
-    private void CinqueDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueDueActionPerformed
-       final int riga =5;
-       final int colonna = 2;
-       CinqueDue.addActionListener(listener);
-    }//GEN-LAST:event_CinqueDueActionPerformed
-
-    private void SeiDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiDueActionPerformed
-       final int riga =6;
-       final int colonna = 2;
-       SeiDue.addActionListener(listener);
-    }//GEN-LAST:event_SeiDueActionPerformed
-
-    private void SetteDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteDueActionPerformed
-      final int riga =7;
-       final int colonna = 2;
-       SetteDue.addActionListener(listener);
-    }//GEN-LAST:event_SetteDueActionPerformed
-
-    private void CinqueTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueTreActionPerformed
-      final int riga =5;
-       final int colonna = 3;
-       CinqueTre.addActionListener(listener);
-    }//GEN-LAST:event_CinqueTreActionPerformed
-
-    private void CinqueQuattroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueQuattroActionPerformed
-       final int riga = 5;
-       final int colonna = 4;
-       CinqueQuattro.addActionListener(listener);
-    }//GEN-LAST:event_CinqueQuattroActionPerformed
-
-    private void SeitreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeitreActionPerformed
-        final int riga =6;
-       final int colonna = 3;
-       Seitre.addActionListener(listener);
-    }//GEN-LAST:event_SeitreActionPerformed
-
-    private void TreCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreCinqueActionPerformed
-        final int riga =3;
-       final int colonna = 5;
-       TreCinque.addActionListener(listener);
-    }//GEN-LAST:event_TreCinqueActionPerformed
-
-    private void TreSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TreSeiActionPerformed
-        final int riga =3;
-       final int colonna = 6;
-       TreSei.addActionListener(listener);
-    }//GEN-LAST:event_TreSeiActionPerformed
-
-    private void QuattroCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroCinqueActionPerformed
-      final int riga =4;
-       final int colonna = 5;
-       QuattroCinque.addActionListener(listener);
-    }//GEN-LAST:event_QuattroCinqueActionPerformed
-
-    private void QuattroSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroSeiActionPerformed
-       final int riga =4;
-       final int colonna = 6;
-       QuattroSei.addActionListener(listener);
-    }//GEN-LAST:event_QuattroSeiActionPerformed
-
-    private void SetteCinqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteCinqueActionPerformed
-      final int riga =7;
-       final int colonna = 5;
-       SetteCinque.addActionListener(listener);
-    }//GEN-LAST:event_SetteCinqueActionPerformed
-
-    private void SetteSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetteSeiActionPerformed
-      final int riga =7;
-       final int colonna = 6;
-       SetteSei.addActionListener(listener);
-    }//GEN-LAST:event_SetteSeiActionPerformed
-
-    private void SeiSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeiSetteActionPerformed
-      final int riga =6;
-       final int colonna = 7;
-       SeiSette.addActionListener(listener);
-    }//GEN-LAST:event_SeiSetteActionPerformed
-
-    private void CinqueSeiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueSeiActionPerformed
-     final int riga = 5;
-       final int colonna = 6;
-       CinqueSei.addActionListener(listener);
-    }//GEN-LAST:event_CinqueSeiActionPerformed
-
-    private void CinqueSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CinqueSetteActionPerformed
-       final int riga =5;
-       final int colonna = 7;
-       CinqueSette.addActionListener(listener);
-    }//GEN-LAST:event_CinqueSetteActionPerformed
-
-    private void QuattroSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuattroSetteActionPerformed
-       final int riga =4;
-       final int colonna = 7;
-       QuattroSette.addActionListener(listener);
-    }//GEN-LAST:event_QuattroSetteActionPerformed
-
-    private void DueSetteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueSetteActionPerformed
-      final int riga =2;
-       final int colonna = 7;
-       DueSette.addActionListener(listener);
-    }//GEN-LAST:event_DueSetteActionPerformed
-
-    private void DueTreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueTreActionPerformed
-        final int riga =2;
-       final int colonna = 3;
-       DueTre.addActionListener(listener);
-    }//GEN-LAST:event_DueTreActionPerformed
-
-    private void DueDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DueDueActionPerformed
-      final int riga = 2;
-       final int colonna = 2;
-       DueDue.addActionListener(listener);
-    }//GEN-LAST:event_DueDueActionPerformed
+    private void ZeroUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZeroUnoActionPerformed
+        ZeroUno.setActionCommand("0,1");
+        ZeroUno.addActionListener(listener);
+    }//GEN-LAST:event_ZeroUnoActionPerformed
     private class Mybuttonlistener implements ActionListener{
 
         public void actionPerformed(ActionEvent ae) {
@@ -1125,10 +1145,10 @@ public class Grigliax extends javax.swing.JFrame {
     private javax.swing.JButton DueZero;
     private javax.swing.JButton QuattroCinque;
     private javax.swing.JButton QuattroDue;
-    private javax.swing.JButton QuattroQuattro;
+    public javax.swing.JButton QuattroQuattro;
     private javax.swing.JButton QuattroSei;
     private javax.swing.JButton QuattroSette;
-    private javax.swing.JButton QuattroTre;
+    public javax.swing.JButton QuattroTre;
     private javax.swing.JButton QuattroUni;
     private javax.swing.JButton QuattroZero;
     private javax.swing.JButton SeiCinque;
@@ -1149,10 +1169,10 @@ public class Grigliax extends javax.swing.JFrame {
     private javax.swing.JButton SetteZero;
     private javax.swing.JButton TreCinque;
     private javax.swing.JButton TreDue;
-    private javax.swing.JButton TreQuattro;
+    public javax.swing.JButton TreQuattro;
     private javax.swing.JButton TreSei;
     private javax.swing.JButton TreSette;
-    private javax.swing.JButton TreTre;
+    public javax.swing.JButton TreTre;
     private javax.swing.JButton TreUno;
     private javax.swing.JButton TreZero;
     private javax.swing.JButton UnoCinque;
@@ -1169,8 +1189,8 @@ public class Grigliax extends javax.swing.JFrame {
     private javax.swing.JButton ZeroSei;
     private javax.swing.JButton ZeroSette;
     private javax.swing.JButton ZeroTre;
-    private javax.swing.JButton ZeroUno;
-    private javax.swing.JButton ZeroZero;
+    public static javax.swing.JButton ZeroUno;
+    public static javax.swing.JButton ZeroZero;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
