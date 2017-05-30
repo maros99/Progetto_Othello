@@ -11,6 +11,7 @@ package Model;
  */
 public interface ControlloGioco {
     public boolean ControlDisco(int riga, int colonna, boolean colore);
+
 }
 
 
