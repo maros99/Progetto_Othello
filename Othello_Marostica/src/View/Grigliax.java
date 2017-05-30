@@ -102,6 +102,8 @@ public class Grigliax extends javax.swing.JFrame {
         DisplayTimer = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(200, 200, 0, 0));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 51));
 
