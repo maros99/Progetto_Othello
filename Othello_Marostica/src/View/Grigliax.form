@@ -2,6 +2,11 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -58,7 +63,10 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="66" red="0" type="rgb"/>
+          <Color blue="4a" green="80" red="0" type="rgb"/>
+        </Property>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursore predefinito"/>
         </Property>
       </Properties>
 
@@ -66,13 +74,155 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="DisplayTimer" min="-2" pref="257" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="Campo" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="MovimentoMosse" min="-2" pref="398" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="617" max="-2" attributes="0"/>
+                          <Component id="DisplayTimer" min="-2" pref="257" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette1" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei2" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette2" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette3" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette4" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei5" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette5" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="ZeroZero6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroUno6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroDue6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroTre6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroQuattro6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroCinque6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSei6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="ZeroSette6" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="ZeroZero7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroUno7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroDue7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroTre7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroQuattro7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroCinque7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroSei7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="ZeroSette7" min="-2" pref="62" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="29" max="32767" attributes="0"/>
+                          <Component id="MovimentoMosse" min="-2" pref="331" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="38" max="32767" attributes="0"/>
@@ -82,26 +232,107 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace pref="27" max="32767" attributes="0"/>
                   <Component id="DisplayTimer" min="-2" pref="55" max="-2" attributes="0"/>
-                  <EmptySpace pref="34" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="MovimentoMosse" min="-2" pref="530" max="-2" attributes="0"/>
-                      <Component id="Campo" min="-2" pref="540" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette3" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette4" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette5" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette6" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="ZeroZero7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroUno7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroDue7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroTre7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroQuattro7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroCinque7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSei7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="ZeroSette7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="Campo">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Resources/Board.jpg"/>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="MovimentoMosse">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -121,15 +352,149 @@
         </Component>
         <Component class="javax.swing.JLabel" name="DisplayTimer">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="2" right="2" top="2"/>
+                <MatteColorBorder bottom="4" left="4" right="4" top="4"/>
               </Border>
             </Property>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero1">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero2">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero3">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero4">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei5">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei6">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroTre7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSette7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroUno7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroQuattro7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroDue7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroCinque7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroZero7">
+        </Component>
+        <Component class="javax.swing.JButton" name="ZeroSei7">
         </Component>
       </SubComponents>
     </Container>
