@@ -5,6 +5,8 @@
  */
 package View;
 
+import Lib.MyTime;
+
 /**
  *
  * @author gaviraghi.elia
@@ -16,6 +18,8 @@ public class Grigliax extends javax.swing.JFrame {
      */
     public Grigliax() {
         initComponents();
+        MyTime t = new MyTime();
+        t.start();
     }
 
     /**
@@ -28,7 +32,7 @@ public class Grigliax extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        Campo = new javax.swing.JLabel();
         MovimentoMosse = new javax.swing.JLabel();
         DisplayTimer = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -42,7 +46,7 @@ public class Grigliax extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 51));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Board.jpg"))); // NOI18N
+        Campo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Board.jpg"))); // NOI18N
 
         MovimentoMosse.setBackground(new java.awt.Color(250, 250, 249));
         MovimentoMosse.setBorder(javax.swing.BorderFactory.createMatteBorder(9, 9, 9, 9, new java.awt.Color(122, 54, 0)));
@@ -59,7 +63,7 @@ public class Grigliax extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(DisplayTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(Campo)
                         .addGap(38, 38, 38)
                         .addComponent(MovimentoMosse, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(38, Short.MAX_VALUE))
@@ -72,7 +76,7 @@ public class Grigliax extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(MovimentoMosse, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Campo, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12))
         );
 
@@ -134,9 +138,9 @@ public class Grigliax extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Campo;
     public static javax.swing.JLabel DisplayTimer;
     private javax.swing.JLabel MovimentoMosse;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
