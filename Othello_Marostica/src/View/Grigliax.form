@@ -20,8 +20,9 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
-      <Rectangle value="[200, 200, 0, 0]"/>
+      <Rectangle value="[100, 100, 0, 0]"/>
     </Property>
+    <Property name="name" type="java.lang.String" value="Alternativa" noResource="true"/>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -44,32 +45,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="DisplayTimer" min="-2" pref="257" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="DispalyOthello" min="-2" pref="317" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace pref="25" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="23" max="32767" attributes="0"/>
-              <Component id="DisplayTimer" min="-2" pref="55" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jPanel1" max="-2" attributes="0"/>
-                  <Component id="DispalyOthello" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -77,786 +58,80 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="ff" red="33" type="rgb"/>
-        </Property>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder/>
-          </Border>
+          <Color blue="33" green="66" red="0" type="rgb"/>
         </Property>
       </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="DisplayTimer" min="-2" pref="257" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="ZeroZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroUno" min="-2" pref="55" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ZeroSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="UnoZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoUNo" min="-2" pref="55" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoTre" min="-2" pref="55" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoQuattro" min="-2" pref="51" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoCinque" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="UnoSei" min="-2" pref="55" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="DueZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueUno" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="DueSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="TreZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreUno" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TreSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="QuattroZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroUni" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="QuattroSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="CinqueZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueUno" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CinqueSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="SeiZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SeiUno" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SeiDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Seitre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SeiQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SeiCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SeiSei" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="SetteZero" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteUno" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteDue" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteTre" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteQuattro" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteCinque" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="SetteSei" min="-2" pref="54" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="MovimentoMosse" min="-2" pref="398" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="ZeroSette" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="UnoSette" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="DueSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="TreSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="QuattroSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="CinqueSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="SeiSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="SetteSette" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace pref="38" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="ZeroZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ZeroUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ZeroDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ZeroTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ZeroQuattro" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
-                      <Component id="ZeroCinque" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="ZeroSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ZeroSette" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                  <Component id="DisplayTimer" min="-2" pref="55" max="-2" attributes="0"/>
+                  <EmptySpace pref="34" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="MovimentoMosse" min="-2" pref="530" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="540" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="UnoCinque" alignment="1" min="-2" pref="43" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="UnoZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                              <Component id="UnoUNo" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                              <Component id="UnoDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                              <Component id="UnoTre" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="UnoSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                              <Component id="UnoSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Component id="UnoQuattro" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DueSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="DueSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DueZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="DueUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="DueDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="DueTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="DueQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="DueCinque" alignment="0" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="TreZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreCinque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="TreSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="QuattroZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroUni" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroCinque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="QuattroSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="CinqueZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueCinque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="CinqueSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="SeiZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="Seitre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiCinque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SeiSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="SetteZero" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteUno" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteDue" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteTre" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteQuattro" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteCinque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteSei" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="SetteSette" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="UnoTre">
+        <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1,3"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Resources/Board.jpg"/>
+            </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="ZeroUno">
+        <Component class="javax.swing.JLabel" name="MovimentoMosse">
           <Properties>
-            <Property name="text" type="java.lang.String" value="0,1"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f9" green="fa" red="fa" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="9" left="9" right="9" top="9">
+                  <Color PropertyName="color" blue="0" green="36" red="7a" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursore predefinito"/>
+            </Property>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroUnoActionPerformed"/>
-          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="DisplayTimer">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2"/>
+              </Border>
+            </Property>
+          </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoUNo">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoUNoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,4"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoQuattroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,4"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroQuattroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,3"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroTreActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroZeroActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="ZeroDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZeroDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="UnoSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="1,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UnoSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DueZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TreZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeiZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteZero">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteZeroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueUno">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DueUnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DueDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreUno">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TreUnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,2"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,3"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DueTreActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroUni">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroUniActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,2"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,4"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,3"/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueUno">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueUnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,3"/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteUno">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteUnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiUno">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeiUnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeiDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteDue">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteDueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,4"/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,3"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueTreActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="Seitre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,3"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeitreActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteTre">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,3"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,4"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,4"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,4"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueQuattroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroQuattro">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,4"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroQuattroActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,5"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TreSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TreSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="TreCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="3,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TreCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DueSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,5"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="DueSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2,6"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeiSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueCinque">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,5"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueCinqueActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteSei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,6"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteSeiActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="QuattroSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="4,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QuattroSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="CinqueSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CinqueSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SeiSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="6,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SeiSetteActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SetteSette">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="7,7"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SetteSetteActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="DispalyOthello">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="0"/>
-        </Property>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-            <MatteColorBorder bottom="4" left="4" right="4" top="4">
-              <Color PropertyName="color" blue="0" green="4b" red="96" type="rgb"/>
-            </MatteColorBorder>
-          </Border>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="DisplayTimer">
-      <Properties>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-            <MatteColorBorder bottom="2" left="2" right="2" top="2"/>
-          </Border>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
-    </Component>
   </SubComponents>
 </Form>
