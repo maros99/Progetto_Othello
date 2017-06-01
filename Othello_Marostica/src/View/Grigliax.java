@@ -22,7 +22,7 @@ public class Grigliax extends javax.swing.JFrame {
         initComponents();
         MyTime t = new MyTime();
         t.start();
-        jPanel2.paintComponents(grphcs);
+      //  jPanel1.paintComponents(Graphics);
     }
 
     /**
