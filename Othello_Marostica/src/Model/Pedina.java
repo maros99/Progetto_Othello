@@ -2,9 +2,9 @@ package Model;
 
 public class Pedina {
 
-    private boolean colore;
-    private int colonna;
-    private int riga;
+     boolean colore;
+     int colonna;
+     int riga;
 
     /**
      * Costruttore
@@ -14,9 +14,8 @@ public class Pedina {
      * @param c
      * @param player
      */
-    public Pedina(int r, int c, boolean player) {
+    public Pedina(int r, int c) {
         r = riga;
         c = colonna;
-        player = colore;
     }
 }

@@ -6,8 +6,12 @@
 package View;
 
 import Lib.MyTime;
+import Model.Pedina;
+import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import javax.swing.DebugGraphics;
+import javax.swing.JLabel;
 
 /**
  *
@@ -15,6 +19,16 @@ import javax.swing.DebugGraphics;
  */
 public class Grigliax extends javax.swing.JFrame {
 
+    /**
+     * @return the MovimentoMosse
+     */
+    public javax.swing.JLabel getMovimentoMosse() {
+        return MovimentoMosse;
+    }
+
+    /**
+     * @param MovimentoMosse the MovimentoMosse to set
+     */
     /**
      * Creates new form Grigliassss
      */
@@ -490,4 +504,8 @@ public class Grigliax extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+  /*  public JLabel getMovimentoMosse() {
+       
+    }*/
 }

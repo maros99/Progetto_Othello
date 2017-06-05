@@ -14,9 +14,10 @@ import javax.swing.JButton;
  * @author Paolo
  */
 public class mappa{
+   
     public Direzione d1;
     public Cella[][] tavola;
-    public int xturn = 0;// se la variabile è a 0 partono i bianchi se no i neri 
+    public int xturn = 1;// se la variabile è a 0 partono i bianchi se no i neri 
     
     /**
      * Costruttore
@@ -71,15 +72,5 @@ public class mappa{
         else
             return false;
     }
-    public void mosse(){
-        while(xturn!=0){
-         if(tavola[3][5]== Cella.Vuota){
-             JButton jButton64; // ****** DA CAMBIARE = HO RINOMINATO TUTTI I BOTTONI IN VASE ALLE COORDINATE
-             // ma usiamo i bottoni o le celle per lavorare?
-      //  jButton64.setBackground(Color.red);
-         }
-    }
-        }
-      }
-    
-    
+}
+
